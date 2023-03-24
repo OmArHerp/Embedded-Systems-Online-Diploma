@@ -1,0 +1,69 @@
+17:21:17 **** Incremental Build of configuration Debug for project C_Basics_Lab ****
+Info: Internal Builder is used for build
+gcc -o C_Basics_Lab.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+17:22:57 **** Incremental Build of configuration Debug for project C_Basics_Lab ****
+Info: Internal Builder is used for build
+gcc -o C_Basics_Lab.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+17:23:12 **** Incremental Build of configuration Debug for project C_Basics_Lab ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o C_Basics_Lab.exe main.o 
+Info: Nothing to build for C_Basics_Lab
+Info: Nothing to build for C_Basics_Lab
+17:30:53 **** Incremental Build of configuration Debug for project C_Basics_Lab ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:17:3: warning: statement with no effect [-Wunused-value]
+   for(j; j<=i ; j++)
+   ^~~
+gcc -o C_Basics_Lab.exe main.o 
+Info: Nothing to build for C_Basics_Lab
+17:32:51 **** Incremental Build of configuration Debug for project C_Basics_Lab ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:17:3: warning: statement with no effect [-Wunused-value]
+   for(j; j<=i ; j++)
+   ^~~
+gcc -o C_Basics_Lab.exe main.o 
+Info: Nothing to build for C_Basics_Lab
+Info: Nothing to build for C_Basics_Lab
+17:38:15 **** Incremental Build of configuration Debug for project C_Basics_Lab ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:17:3: warning: statement with no effect [-Wunused-value]
+   for(j; j<=temp ; j++)
+   ^~~
+gcc -o C_Basics_Lab.exe main.o 
+Info: Nothing to build for C_Basics_Lab
+Info: Nothing to build for C_Basics_Lab
+17:39:02 **** Incremental Build of configuration Debug for project C_Basics_Lab ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:17:3: warning: statement with no effect [-Wunused-value]
+   for(j; j<=9 ; j++)
+   ^~~
+gcc -o C_Basics_Lab.exe main.o 
+Info: Nothing to build for C_Basics_Lab
