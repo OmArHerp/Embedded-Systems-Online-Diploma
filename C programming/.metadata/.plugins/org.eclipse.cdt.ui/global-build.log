@@ -1,69 +1,156 @@
-17:21:17 **** Incremental Build of configuration Debug for project C_Basics_Lab ****
+21:53:16 **** Incremental Build of configuration Debug for project C_Basics_Assignment1-5(ASCII Value of a Character) ****
 Info: Internal Builder is used for build
-gcc -o C_Basics_Lab.exe main.o 
+gcc -o "C_Basics_Assignment1-5(ASCII Value of a Character).exe" main.o 
 c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
 collect2.exe: error: ld returned 1 exit status
-17:22:57 **** Incremental Build of configuration Debug for project C_Basics_Lab ****
+21:53:36 **** Incremental Build of configuration Debug for project C_Basics_Assignment1-5(ASCII Value of a Character) ****
 Info: Internal Builder is used for build
-gcc -o C_Basics_Lab.exe main.o 
+gcc -o "C_Basics_Assignment1-5(ASCII Value of a Character).exe" main.o 
 c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
 collect2.exe: error: ld returned 1 exit status
-17:23:12 **** Incremental Build of configuration Debug for project C_Basics_Lab ****
+21:53:40 **** Incremental Build of configuration Debug for project C_Basics_Assignment1-5(ASCII Value of a Character) ****
+Info: Internal Builder is used for build
+gcc -o "C_Basics_Assignment1-5(ASCII Value of a Character).exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+21:56:46 **** Incremental Build of configuration Debug for project C_Basics_Assignment1-5(ASCII Value of a Character) ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 ..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
  void main()
       ^~~~
-gcc -o C_Basics_Lab.exe main.o 
-Info: Nothing to build for C_Basics_Lab
-Info: Nothing to build for C_Basics_Lab
-17:30:53 **** Incremental Build of configuration Debug for project C_Basics_Lab ****
+gcc -o "C_Basics_Assignment1-5(ASCII Value of a Character).exe" main.o 
+Info: Nothing to build for C_Basics_Assignment1-5(ASCII Value of a Character)
+Info: Nothing to build for C_Basics_Assignment1-5(ASCII Value of a Character)
+Info: Nothing to build for C_Basics_Assignment1-5(ASCII Value of a Character)
+21:57:42 **** Incremental Build of configuration Debug for project C_Basics_Assignment1-5(ASCII Value of a Character) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o "C_Basics_Assignment1-5(ASCII Value of a Character).exe" main.o 
+Info: Nothing to build for C_Basics_Assignment1-5(ASCII Value of a Character)
+Info: Nothing to build for C_Basics_Assignment1-5(ASCII Value of a Character)
+22:34:18 **** Rebuild of configuration Debug for project C_Basics_Assignment1_7(Swap program without temp) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "C_Basics_Assignment1_7(Swap program without temp).exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for C_Basics_Assignment1-5(ASCII Value of a Character)
+22:35:20 **** Incremental Build of configuration Debug for project C_Basics_Assignment1_7(Swap program without temp) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o "C_Basics_Assignment1_7(Swap program without temp).exe" main.o 
+Info: Nothing to build for C_Basics_Assignment1_7(Swap program without temp)
+Info: Nothing to build for C_Basics_Assignment1-5(ASCII Value of a Character)
+22:37:35 **** Incremental Build of configuration Debug for project C_Basics_Assignment1_7(Swap program without temp) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o "C_Basics_Assignment1_7(Swap program without temp).exe" main.o 
+Info: Nothing to build for C_Basics_Assignment1_7(Swap program without temp)
+Info: Nothing to build for C_Basics_Assignment1-5(ASCII Value of a Character)
+22:38:41 **** Incremental Build of configuration Debug for project C_Basics_Assignment1_7(Swap program without temp) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o "C_Basics_Assignment1_7(Swap program without temp).exe" main.o 
+Info: Nothing to build for C_Basics_Assignment1_7(Swap program without temp)
+Info: Nothing to build for C_Basics_Assignment1-5(ASCII Value of a Character)
+22:47:40 **** Incremental Build of configuration Debug for project C_Basics_Assignment1_7(Swap program without temp) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o "C_Basics_Assignment1_7(Swap program without temp).exe" main.o 
+Info: Nothing to build for C_Basics_Assignment1_7(Swap program without temp)
+Info: Nothing to build for C_Basics_Assignment1_7(Swap program without temp)
+23:18:10 **** Rebuild of configuration Debug for project Assignment2_5(Character alphabet or not) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "Assignment2_5(Character alphabet or not).exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+23:18:14 **** Incremental Build of configuration Debug for project Assignment2_5(Character alphabet or not) ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 ..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
  void main()
       ^~~~
 ..\main.c: In function 'main':
-..\main.c:17:3: warning: statement with no effect [-Wunused-value]
-   for(j; j<=i ; j++)
-   ^~~
-gcc -o C_Basics_Lab.exe main.o 
-Info: Nothing to build for C_Basics_Lab
-17:32:51 **** Incremental Build of configuration Debug for project C_Basics_Lab ****
+..\main.c:15:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+  scanf("%d",&x);
+          ^
+..\main.c:16:43: error: expected statement before ')' token
+  if((x>=65 || x<=90) || (x>=97 || x<=122)))
+                                           ^
+..\main.c:20:3: error: 'else' without a previous 'if'
+   else
+   ^~~~
+23:18:36 **** Incremental Build of configuration Debug for project Assignment2_5(Character alphabet or not) ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 ..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
  void main()
       ^~~~
 ..\main.c: In function 'main':
-..\main.c:17:3: warning: statement with no effect [-Wunused-value]
-   for(j; j<=i ; j++)
-   ^~~
-gcc -o C_Basics_Lab.exe main.o 
-Info: Nothing to build for C_Basics_Lab
-Info: Nothing to build for C_Basics_Lab
-17:38:15 **** Incremental Build of configuration Debug for project C_Basics_Lab ****
+..\main.c:15:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+  scanf("%d",&x);
+          ^
+..\main.c:16:43: error: expected statement before ')' token
+  if((x>=65 || x<=90) || (x>=97 || x<=122)))
+                                           ^
+..\main.c:20:3: error: 'else' without a previous 'if'
+   else
+   ^~~~
+23:18:38 **** Incremental Build of configuration Debug for project Assignment2_5(Character alphabet or not) ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 ..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
  void main()
       ^~~~
 ..\main.c: In function 'main':
-..\main.c:17:3: warning: statement with no effect [-Wunused-value]
-   for(j; j<=temp ; j++)
-   ^~~
-gcc -o C_Basics_Lab.exe main.o 
-Info: Nothing to build for C_Basics_Lab
-Info: Nothing to build for C_Basics_Lab
-17:39:02 **** Incremental Build of configuration Debug for project C_Basics_Lab ****
+..\main.c:15:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'char *' [-Wformat=]
+  scanf("%d",&x);
+          ^
+gcc -o "Assignment2_5(Character alphabet or not).exe" main.o 
+23:18:53 **** Incremental Build of configuration Debug for project Assignment2_5(Character alphabet or not) ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 ..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
  void main()
       ^~~~
-..\main.c: In function 'main':
-..\main.c:17:3: warning: statement with no effect [-Wunused-value]
-   for(j; j<=9 ; j++)
-   ^~~
-gcc -o C_Basics_Lab.exe main.o 
-Info: Nothing to build for C_Basics_Lab
+gcc -o "Assignment2_5(Character alphabet or not).exe" main.o 
+Info: Nothing to build for Assignment2_5(Character alphabet or not)
+Info: Nothing to build for Assignment2_5(Character alphabet or not)
+Info: Nothing to build for Assignment2_5(Character alphabet or not)
+Info: Nothing to build for Assignment2_5(Character alphabet or not)
+23:19:56 **** Incremental Build of configuration Debug for project Assignment2_5(Character alphabet or not) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o "Assignment2_5(Character alphabet or not).exe" main.o 
+Info: Nothing to build for Assignment2_5(Character alphabet or not)
+Info: Nothing to build for Assignment2_5(Character alphabet or not)
+23:21:13 **** Incremental Build of configuration Debug for project Assignment2_5(Character alphabet or not) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o "Assignment2_5(Character alphabet or not).exe" main.o 
+Info: Nothing to build for Assignment2_5(Character alphabet or not)
+Info: Nothing to build for Assignment2_5(Character alphabet or not)
+Info: Nothing to build for Assignment2_5(Character alphabet or not)
