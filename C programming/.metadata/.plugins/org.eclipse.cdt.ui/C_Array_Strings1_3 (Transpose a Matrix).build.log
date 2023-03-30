@@ -1,0 +1,8 @@
+00:55:39 **** Incremental Build of configuration Debug for project C_Array_Strings1_3 (Transpose a Matrix) ****
+Info: Internal Builder is used for build
+gcc -o "C_Array_Strings1_3 (Transpose a Matrix).exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Array_Strings1_3 (Transpose a Matrix).exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+
+00:55:39 Build Finished (took 222ms)
+

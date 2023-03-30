@@ -1,160 +1,28 @@
-23:42:12 **** Rebuild of configuration Debug for project C_Array_Strings1_1(Multidimensional Array) ****
+00:54:56 **** Rebuild of configuration Debug for project C_Array_Strings1_3 (Transpose a Matrix) ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o "C_Array_Strings1_1(Multidimensional Array).exe" main.o 
-c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o "C_Array_Strings1_3 (Transpose a Matrix).exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Array_Strings1_3 (Transpose a Matrix).exe: Permission denied
 collect2.exe: error: ld returned 1 exit status
-23:42:26 **** Incremental Build of configuration Debug for project C_Array_Strings1_1(Multidimensional Array) ****
+00:55:03 **** Incremental Build of configuration Debug for project C_Array_Strings1_3 (Transpose a Matrix) ****
+Info: Internal Builder is used for build
+gcc -o "C_Array_Strings1_3 (Transpose a Matrix).exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Array_Strings1_3 (Transpose a Matrix).exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+00:55:37 **** Incremental Build of configuration Debug for project C_Array_Strings1_3 (Transpose a Matrix) ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 ..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
  void main()
       ^~~~
-..\main.c: In function 'main':
-..\main.c:21:4: error: too few arguments to function 'fflush'
-    fflush();
-    ^~~~~~
-In file included from ..\main.c:8:0:
-c:\mingw\include\stdio.h:262:41: note: declared here
- _CRTIMP __cdecl __MINGW_NOTHROW  int    fflush (FILE *);
-                                         ^~~~~~
-..\main.c:32:4: error: too few arguments to function 'fflush'
-    fflush();
-    ^~~~~~
-In file included from ..\main.c:8:0:
-c:\mingw\include\stdio.h:262:41: note: declared here
- _CRTIMP __cdecl __MINGW_NOTHROW  int    fflush (FILE *);
-                                         ^~~~~~
-..\main.c:42:13: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
-    printf("%d\t",matrix1[i][j] + matrix2[i][j]);
-             ^
-23:43:49 **** Incremental Build of configuration Debug for project C_Array_Strings1_1(Multidimensional Array) ****
+gcc -o "C_Array_Strings1_3 (Transpose a Matrix).exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Array_Strings1_3 (Transpose a Matrix).exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+00:55:39 **** Incremental Build of configuration Debug for project C_Array_Strings1_3 (Transpose a Matrix) ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-..\main.c: In function 'main':
-..\main.c:21:4: error: too few arguments to function 'fflush'
-    fflush();
-    ^~~~~~
-In file included from ..\main.c:8:0:
-c:\mingw\include\stdio.h:262:41: note: declared here
- _CRTIMP __cdecl __MINGW_NOTHROW  int    fflush (FILE *);
-                                         ^~~~~~
-..\main.c:32:4: error: too few arguments to function 'fflush'
-    fflush();
-    ^~~~~~
-In file included from ..\main.c:8:0:
-c:\mingw\include\stdio.h:262:41: note: declared here
- _CRTIMP __cdecl __MINGW_NOTHROW  int    fflush (FILE *);
-                                         ^~~~~~
-..\main.c:42:13: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
-    printf("%d\t",matrix1[i][j] + matrix2[i][j]);
-             ^
-23:43:52 **** Incremental Build of configuration Debug for project C_Array_Strings1_1(Multidimensional Array) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-..\main.c: In function 'main':
-..\main.c:21:4: error: too few arguments to function 'fflush'
-    fflush();
-    ^~~~~~
-In file included from ..\main.c:8:0:
-c:\mingw\include\stdio.h:262:41: note: declared here
- _CRTIMP __cdecl __MINGW_NOTHROW  int    fflush (FILE *);
-                                         ^~~~~~
-..\main.c:32:4: error: too few arguments to function 'fflush'
-    fflush();
-    ^~~~~~
-In file included from ..\main.c:8:0:
-c:\mingw\include\stdio.h:262:41: note: declared here
- _CRTIMP __cdecl __MINGW_NOTHROW  int    fflush (FILE *);
-                                         ^~~~~~
-..\main.c:42:13: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
-    printf("%d\t",matrix1[i][j] + matrix2[i][j]);
-             ^
-23:44:10 **** Incremental Build of configuration Debug for project C_Array_Strings1_1(Multidimensional Array) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-..\main.c: In function 'main':
-..\main.c:21:4: error: too few arguments to function 'fflush'
-    fflush();
-    ^~~~~~
-In file included from ..\main.c:8:0:
-c:\mingw\include\stdio.h:262:41: note: declared here
- _CRTIMP __cdecl __MINGW_NOTHROW  int    fflush (FILE *);
-                                         ^~~~~~
-..\main.c:32:4: error: too few arguments to function 'fflush'
-    fflush();
-    ^~~~~~
-In file included from ..\main.c:8:0:
-c:\mingw\include\stdio.h:262:41: note: declared here
- _CRTIMP __cdecl __MINGW_NOTHROW  int    fflush (FILE *);
-                                         ^~~~~~
-..\main.c:42:13: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
-    printf("%d\t",matrix1[i][j] + matrix2[i][j]);
-             ^
-23:44:15 **** Incremental Build of configuration Debug for project C_Array_Strings1_1(Multidimensional Array) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-..\main.c: In function 'main':
-..\main.c:21:4: error: too few arguments to function 'fflush'
-    fflush();
-    ^~~~~~
-In file included from ..\main.c:8:0:
-c:\mingw\include\stdio.h:262:41: note: declared here
- _CRTIMP __cdecl __MINGW_NOTHROW  int    fflush (FILE *);
-                                         ^~~~~~
-..\main.c:32:4: error: too few arguments to function 'fflush'
-    fflush();
-    ^~~~~~
-In file included from ..\main.c:8:0:
-c:\mingw\include\stdio.h:262:41: note: declared here
- _CRTIMP __cdecl __MINGW_NOTHROW  int    fflush (FILE *);
-                                         ^~~~~~
-..\main.c:42:13: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
-    printf("%d\t",matrix1[i][j] + matrix2[i][j]);
-             ^
-23:44:17 **** Incremental Build of configuration Debug for project C_Array_Strings1_1(Multidimensional Array) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-..\main.c: In function 'main':
-..\main.c:40:13: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
-    printf("%d\t",matrix1[i][j] + matrix2[i][j]);
-             ^
-gcc -o "C_Array_Strings1_1(Multidimensional Array).exe" main.o 
-23:44:31 **** Incremental Build of configuration Debug for project C_Array_Strings1_1(Multidimensional Array) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-gcc -o "C_Array_Strings1_1(Multidimensional Array).exe" main.o 
-Info: Nothing to build for C_Array_Strings1_1(Multidimensional Array)
-23:45:20 **** Incremental Build of configuration Debug for project C_Array_Strings1_1(Multidimensional Array) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-gcc -o "C_Array_Strings1_1(Multidimensional Array).exe" main.o 
-23:45:33 **** Incremental Build of configuration Debug for project C_Array_Strings1_1(Multidimensional Array) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-gcc -o "C_Array_Strings1_1(Multidimensional Array).exe" main.o 
-Info: Nothing to build for C_Array_Strings1_1(Multidimensional Array)
+gcc -o "C_Array_Strings1_3 (Transpose a Matrix).exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Array_Strings1_3 (Transpose a Matrix).exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
