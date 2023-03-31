@@ -119,3 +119,168 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c"
 gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
 Info: Nothing to build for C_Array_String1_4(Insert an element in array)
 Info: Nothing to build for C_Array_String1_4(Insert an element in array)
+13:26:34 **** Rebuild of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:21:13: warning: passing argument 1 of 'strlwr' makes pointer from integer without a cast [-Wint-conversion]
+   if(strlwr(string1[i]) == strlwr(c))
+             ^~~~~~~
+In file included from ..\main.c:9:0:
+c:\mingw\include\string.h:140:40: note: expected 'char *' but argument is of type 'char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strlwr (char *);
+                                        ^~~~~~
+..\main.c:21:35: warning: passing argument 1 of 'strlwr' makes pointer from integer without a cast [-Wint-conversion]
+   if(strlwr(string1[i]) == strlwr(c))
+                                   ^
+In file included from ..\main.c:9:0:
+c:\mingw\include\string.h:140:40: note: expected 'char *' but argument is of type 'char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strlwr (char *);
+                                        ^~~~~~
+gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
+13:28:04 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:21:13: warning: passing argument 1 of 'strlwr' makes pointer from integer without a cast [-Wint-conversion]
+   if(strlwr(string1[i]) ==c)
+             ^~~~~~~
+In file included from ..\main.c:9:0:
+c:\mingw\include\string.h:140:40: note: expected 'char *' but argument is of type 'char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strlwr (char *);
+                                        ^~~~~~
+..\main.c:21:25: warning: comparison between pointer and integer
+   if(strlwr(string1[i]) ==c)
+                         ^~
+gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
+13:29:05 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
+13:29:57 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:19:9: warning: passing argument 1 of 'strlwr' makes pointer from integer without a cast [-Wint-conversion]
+  strlwr(c);
+         ^
+In file included from ..\main.c:9:0:
+c:\mingw\include\string.h:140:40: note: expected 'char *' but argument is of type 'char'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char *strlwr (char *);
+                                        ^~~~~~
+gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
+13:32:46 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
+13:33:09 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
+Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
+13:35:52 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
+Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
+13:37:54 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
+Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
+13:38:42 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
+Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
+Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
+13:42:52 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
+Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
+13:43:19 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
+Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
+13:43:51 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
+13:44:18 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
+Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
+13:45:21 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
+Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
+13:47:24 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
+Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
+13:47:38 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
+Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
+13:48:00 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
+Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
+13:49:09 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
+Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
+13:50:05 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
+Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
+Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
+Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
