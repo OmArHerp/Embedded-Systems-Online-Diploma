@@ -295,3 +295,31 @@ gcc -o "C_Array_String(Length of a string).exe" main.o
 Info: Nothing to build for C_Array_String(Length of a string)
 Info: Nothing to build for C_Array_String(Length of a string)
 Info: Nothing to build for C_Array_String(Length of a string)
+14:12:46 **** Rebuild of configuration Debug for project C_Array_String2_3(Reverse String) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:14:8: warning: unused variable 'c' [-Wunused-variable]
+  int i,c;
+        ^
+gcc -o "C_Array_String2_3(Reverse String).exe" main.o 
+14:13:20 **** Incremental Build of configuration Debug for project C_Array_String2_3(Reverse String) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "C_Array_String2_3(Reverse String).exe" main.o 
+Info: Nothing to build for C_Array_String2_3(Reverse String)
+Info: Nothing to build for C_Array_String2_3(Reverse String)
+14:14:29 **** Incremental Build of configuration Debug for project C_Array_String2_3(Reverse String) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:22:12: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+   printf("%s",string1[i]);
+            ^
+gcc -o "C_Array_String2_3(Reverse String).exe" main.o 
+Info: Nothing to build for C_Array_String2_3(Reverse String)
+14:14:54 **** Incremental Build of configuration Debug for project C_Array_String2_3(Reverse String) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "C_Array_String2_3(Reverse String).exe" main.o 
+Info: Nothing to build for C_Array_String2_3(Reverse String)
