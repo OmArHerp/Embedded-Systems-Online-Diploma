@@ -1,0 +1,52 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 31, 2023
+ *      Author: OmArHerp
+ */
+
+#include<stdio.h>
+
+void main()
+{
+	unsigned char x,i,p;
+	int element;
+	int arr[100];
+	int temp;
+
+	printf("Enter the size of the array: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%u",&x);
+
+	for(i=0; i<x ;i++)
+	{
+		arr[i]= i+1; // arr[100] = {0,1,2,3,...,x} at i = x - 1
+	}
+
+	printf("\n array before inserting :\n");
+	for(i=0; i<x ;i++)
+	{
+		printf("%d",arr[i]);
+	}
+
+	printf("\n Enter the element you want to insert in the array & it's position: ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d%u",&element,&p);
+
+	i=p-1;
+	temp = arr[i];
+	arr[i] = element;
+	for(i=p; i<x+1 ;i++)
+	{
+		arr[i] = temp;
+		temp = arr[i+1];
+	}
+
+	printf("\n array After inserting :\n");
+	for(i=0; i<x ;i++)
+	{
+		printf("%d",arr[i]);
+	}
+
+}
+

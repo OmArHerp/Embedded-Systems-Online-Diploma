@@ -1,28 +1,121 @@
-00:54:56 **** Rebuild of configuration Debug for project C_Array_Strings1_3 (Transpose a Matrix) ****
+03:59:27 **** Clean-only build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
+rm -rf "C_Array_String1_4(Insert an element in array).exe" main.d main.o 
+rm: cannot remove `C_Array_String1_4(Insert an element in array).exe': Permission denied
+03:59:36 **** Rebuild of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 ..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
  void main()
       ^~~~
-gcc -o "C_Array_Strings1_3 (Transpose a Matrix).exe" main.o 
-c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Array_Strings1_3 (Transpose a Matrix).exe: Permission denied
+gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Array_String1_4(Insert an element in array).exe: Permission denied
 collect2.exe: error: ld returned 1 exit status
-00:55:03 **** Incremental Build of configuration Debug for project C_Array_Strings1_3 (Transpose a Matrix) ****
+03:59:45 **** Incremental Build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
 Info: Internal Builder is used for build
-gcc -o "C_Array_Strings1_3 (Transpose a Matrix).exe" main.o 
-c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Array_Strings1_3 (Transpose a Matrix).exe: Permission denied
+gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Array_String1_4(Insert an element in array).exe: Permission denied
 collect2.exe: error: ld returned 1 exit status
-00:55:37 **** Incremental Build of configuration Debug for project C_Array_Strings1_3 (Transpose a Matrix) ****
+04:34:42 **** Rebuild of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 ..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
  void main()
       ^~~~
-gcc -o "C_Array_Strings1_3 (Transpose a Matrix).exe" main.o 
-c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Array_Strings1_3 (Transpose a Matrix).exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
-00:55:39 **** Incremental Build of configuration Debug for project C_Array_Strings1_3 (Transpose a Matrix) ****
+gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
+Info: Nothing to build for C_Array_String1_4(Insert an element in array)
+04:35:14 **** Incremental Build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
 Info: Internal Builder is used for build
-gcc -o "C_Array_Strings1_3 (Transpose a Matrix).exe" main.o 
-c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Array_Strings1_3 (Transpose a Matrix).exe: Permission denied
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:21:9: error: 'stdio' undeclared (first use in this function)
+  fflush(stdio);
+         ^~~~~
+..\main.c:21:9: note: each undeclared identifier is reported only once for each function it appears in
+04:35:16 **** Incremental Build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:21:9: error: 'stdio' undeclared (first use in this function)
+  fflush(stdio);
+         ^~~~~
+..\main.c:21:9: note: each undeclared identifier is reported only once for each function it appears in
+04:36:14 **** Incremental Build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Array_String1_4(Insert an element in array).exe: Permission denied
 collect2.exe: error: ld returned 1 exit status
+04:36:16 **** Incremental Build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
+Info: Internal Builder is used for build
+gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Array_String1_4(Insert an element in array).exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+04:36:24 **** Incremental Build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Array_String1_4(Insert an element in array).exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+04:36:26 **** Incremental Build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
+Info: Internal Builder is used for build
+gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Array_String1_4(Insert an element in array).exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+04:37:26 **** Incremental Build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
+Info: Internal Builder is used for build
+gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
+Info: Nothing to build for C_Array_String1_4(Insert an element in array)
+Info: Nothing to build for C_Array_String1_4(Insert an element in array)
+Info: Nothing to build for C_Array_String1_4(Insert an element in array)
+Info: Nothing to build for C_Array_String1_4(Insert an element in array)
+Info: Nothing to build for C_Array_String1_4(Insert an element in array)
+Info: Nothing to build for C_Array_String1_4(Insert an element in array)
+Info: Nothing to build for C_Array_String1_4(Insert an element in array)
+04:51:58 **** Incremental Build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
+Info: Nothing to build for C_Array_String1_4(Insert an element in array)
+Info: Nothing to build for C_Array_String1_4(Insert an element in array)
+Info: Nothing to build for C_Array_String1_4(Insert an element in array)
+Info: Nothing to build for C_Array_String1_4(Insert an element in array)
+05:02:20 **** Incremental Build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:17:6: warning: unused variable 'temp' [-Wunused-variable]
+  int temp;
+      ^~~~
+gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
+Info: Nothing to build for C_Array_String1_4(Insert an element in array)
+05:03:09 **** Incremental Build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:17:6: warning: unused variable 'temp' [-Wunused-variable]
+  int temp;
+      ^~~~
+gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
+Info: Nothing to build for C_Array_String1_4(Insert an element in array)
+Info: Nothing to build for C_Array_String1_4(Insert an element in array)
