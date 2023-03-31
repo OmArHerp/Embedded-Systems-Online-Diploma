@@ -284,3 +284,14 @@ gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o
 Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
 Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
 Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
+14:03:20 **** Rebuild of configuration Debug for project C_Array_String(Length of a string) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "C_Array_String(Length of a string).exe" main.o 
+14:03:37 **** Incremental Build of configuration Debug for project C_Array_String(Length of a string) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "C_Array_String(Length of a string).exe" main.o 
+Info: Nothing to build for C_Array_String(Length of a string)
+Info: Nothing to build for C_Array_String(Length of a string)
+Info: Nothing to build for C_Array_String(Length of a string)
