@@ -9,14 +9,26 @@
 - Unit 3: Embedded C ![](https://progress-bar.dev/0/)
 - Unit 4: System Architecture  ![](https://progress-bar.dev/0/)
 
-:fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h:
+
+
+------------
+
+
 
 ### - Second Term   ![](https://progress-bar.dev/0/?title=Soon)
 
 
-:fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h:
+
+
+------------
+
+
 
 ### - Third Term   ![](https://progress-bar.dev/0/?title=Soon)
 
 
-:fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h::fa-ellipsis-h:
+
+
+------------
+
+
