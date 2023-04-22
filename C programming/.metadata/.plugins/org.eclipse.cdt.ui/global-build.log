@@ -411,3 +411,23 @@ Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 gcc -o "Factorial Recursion.exe" main.o 
 Info: Nothing to build for Factorial Recursion
+06:59:39 **** Rebuild of configuration Debug for project C_Functions_4(Power Using Recursion) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:18:2: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
+  print("%d power of %d is %d",n,m,Power_Function(n,m));
+  ^~~~~
+gcc -o "C_Functions_4(Power Using Recursion).exe" main.o 
+main.o: In function `main':
+D:\Omar\My-GitHub\Embedded-Systems-Online-Diploma\C programming\C_Functions_4(Power Using Recursion)\Debug/../main.c:18: undefined reference to `print'
+collect2.exe: error: ld returned 1 exit status
+06:59:48 **** Incremental Build of configuration Debug for project C_Functions_4(Power Using Recursion) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "C_Functions_4(Power Using Recursion).exe" main.o 
+07:00:06 **** Incremental Build of configuration Debug for project C_Functions_4(Power Using Recursion) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "C_Functions_4(Power Using Recursion).exe" main.o 
+Info: Nothing to build for C_Functions_4(Power Using Recursion)
