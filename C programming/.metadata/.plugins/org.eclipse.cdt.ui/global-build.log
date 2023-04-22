@@ -386,3 +386,28 @@ Info: Internal Builder is used for build
 gcc -o "C_Functions_1(Prime Number between Intervals).exe" main.o 
 c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Functions_1(Prime Number between Intervals).exe: Permission denied
 collect2.exe: error: ld returned 1 exit status
+06:23:25 **** Rebuild of configuration Debug for project C_Functions_2(Factorial Recursion) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C_Functions_2(Factorial Recursion).o" "..\\src\\C_Functions_2(Factorial Recursion).c" 
+gcc -o "C_Functions_2(Factorial Recursion).exe" "src\\C_Functions_2(Factorial Recursion).o" 
+Info: Nothing to build for C_Functions_2(Factorial Recursion)
+06:25:02 **** Incremental Build of configuration Debug for project C_Functions_2(Factorial Recursion) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C_Functions_2(Factorial Recursion).o" "..\\src\\C_Functions_2(Factorial Recursion).c" 
+gcc -o "C_Functions_2(Factorial Recursion).exe" "src\\C_Functions_2(Factorial Recursion).o" 
+Info: Nothing to build for C_Functions_2(Factorial Recursion)
+06:26:14 **** Incremental Build of configuration Debug for project C_Functions_2(Factorial Recursion) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C_Functions_2(Factorial Recursion).o" "..\\src\\C_Functions_2(Factorial Recursion).c" 
+gcc -o "C_Functions_2(Factorial Recursion).exe" "src\\C_Functions_2(Factorial Recursion).o" 
+Info: Nothing to build for C_Functions_2(Factorial Recursion)
+06:27:26 **** Rebuild of configuration Debug for project Factorial Recursion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "Factorial Recursion.exe" main.o 
+Info: Nothing to build for Factorial Recursion
+06:31:45 **** Incremental Build of configuration Debug for project Factorial Recursion ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "Factorial Recursion.exe" main.o 
+Info: Nothing to build for Factorial Recursion
