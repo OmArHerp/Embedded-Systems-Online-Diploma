@@ -323,3 +323,66 @@ Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 gcc -o "C_Array_String2_3(Reverse String).exe" main.o 
 Info: Nothing to build for C_Array_String2_3(Reverse String)
+05:40:42 **** Rebuild of configuration Debug for project C_Functions_1(Prime Number between Intervals) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:17:2: error: too few arguments to function 'Prime_Number'
+  Prime_Number();
+  ^~~~~~~~~~~~
+..\main.c:9:6: note: declared here
+ void Prime_Number(int , int);
+      ^~~~~~~~~~~~
+..\main.c: In function 'Prime_Number':
+..\main.c:32:2: warning: statement with no effect [-Wunused-value]
+  for(x; x<=y ; x++)
+  ^~~
+05:41:01 **** Incremental Build of configuration Debug for project C_Functions_1(Prime Number between Intervals) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Prime_Number':
+..\main.c:32:2: warning: statement with no effect [-Wunused-value]
+  for(x; x<=y ; x++)
+  ^~~
+gcc -o "C_Functions_1(Prime Number between Intervals).exe" main.o 
+05:41:47 **** Incremental Build of configuration Debug for project C_Functions_1(Prime Number between Intervals) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Prime_Number':
+..\main.c:33:2: warning: statement with no effect [-Wunused-value]
+  for(x; x<=y ; x++)
+  ^~~
+gcc -o "C_Functions_1(Prime Number between Intervals).exe" main.o 
+Info: Nothing to build for C_Functions_1(Prime Number between Intervals)
+05:42:47 **** Incremental Build of configuration Debug for project C_Functions_1(Prime Number between Intervals) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Prime_Number':
+..\main.c:27:2: warning: statement with no effect [-Wunused-value]
+  for(x; x<=y ; x++)
+  ^~~
+gcc -o "C_Functions_1(Prime Number between Intervals).exe" main.o 
+05:43:56 **** Incremental Build of configuration Debug for project C_Functions_1(Prime Number between Intervals) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Prime_Number':
+..\main.c:27:2: warning: statement with no effect [-Wunused-value]
+  for(x; x<=y ; x++)
+  ^~~
+gcc -o "C_Functions_1(Prime Number between Intervals).exe" main.o 
+Info: Nothing to build for C_Functions_1(Prime Number between Intervals)
+05:44:14 **** Incremental Build of configuration Debug for project C_Functions_1(Prime Number between Intervals) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Prime_Number':
+..\main.c:27:2: warning: statement with no effect [-Wunused-value]
+  for(x; x<=y ; x++)
+  ^~~
+gcc -o "C_Functions_1(Prime Number between Intervals).exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Functions_1(Prime Number between Intervals).exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+05:44:16 **** Incremental Build of configuration Debug for project C_Functions_1(Prime Number between Intervals) ****
+Info: Internal Builder is used for build
+gcc -o "C_Functions_1(Prime Number between Intervals).exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Functions_1(Prime Number between Intervals).exe: Permission denied
+collect2.exe: error: ld returned 1 exit status

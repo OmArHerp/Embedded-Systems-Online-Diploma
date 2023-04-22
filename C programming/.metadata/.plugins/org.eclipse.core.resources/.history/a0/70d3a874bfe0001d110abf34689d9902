@@ -1,0 +1,25 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 22, 2023
+ *      Author: OmArHerp
+ */
+
+#include<stdio.h>
+
+int main()
+{
+	int a,b;
+	printf("Please Enter two numbers \"The Interval\"\n\r");
+	scanf("%d%d",&a,&b);
+
+
+
+
+
+
+
+	return 0;
+}
+
+
