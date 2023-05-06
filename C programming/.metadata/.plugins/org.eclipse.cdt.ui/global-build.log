@@ -431,3 +431,156 @@ Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 gcc -o "C_Functions_4(Power Using Recursion).exe" main.o 
 Info: Nothing to build for C_Functions_4(Power Using Recursion)
+17:43:02 **** Rebuild of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "C_Functions_3(Reverse a string (Recursion)).exe" main.o 
+Info: Nothing to build for C_Functions_3(Reverse a string (Recursion))
+18:09:57 **** Incremental Build of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:15:32: error: invalid initializer
+  int length =0; char str[100] =0;
+                                ^
+..\main.c:19:10: warning: passing argument 1 of 'Reverse' makes integer from pointer without a cast [-Wint-conversion]
+  Reverse(str,strlen(str));
+          ^~~
+..\main.c:11:6: note: expected 'char' but argument is of type 'char *'
+ char Reverse(char , int);
+      ^~~~~~~
+..\main.c:15:6: warning: unused variable 'length' [-Wunused-variable]
+  int length =0; char str[100] =0;
+      ^~~~~~
+..\main.c: At top level:
+..\main.c:23:6: error: conflicting types for 'Reverse'
+ char Reverse(char arr[], int i)
+      ^~~~~~~
+..\main.c:11:6: note: previous declaration of 'Reverse' was here
+ char Reverse(char , int);
+      ^~~~~~~
+..\main.c: In function 'Reverse':
+..\main.c:33:13: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   return(arr, i);
+             ^
+18:10:58 **** Incremental Build of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:15:32: error: invalid initializer
+  int length =0; char str[100] =0;
+                                ^
+..\main.c:19:10: warning: passing argument 1 of 'Reverse' makes integer from pointer without a cast [-Wint-conversion]
+  Reverse(str,strlen(str));
+          ^~~
+..\main.c:11:6: note: expected 'char' but argument is of type 'char *'
+ char Reverse(char , int);
+      ^~~~~~~
+..\main.c:15:6: warning: unused variable 'length' [-Wunused-variable]
+  int length =0; char str[100] =0;
+      ^~~~~~
+..\main.c: At top level:
+..\main.c:23:6: error: conflicting types for 'Reverse'
+ char Reverse(char arr[], int i)
+      ^~~~~~~
+..\main.c:11:6: note: previous declaration of 'Reverse' was here
+ char Reverse(char , int);
+      ^~~~~~~
+..\main.c: In function 'Reverse':
+..\main.c:33:13: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   return(arr, i);
+             ^
+18:11:00 **** Incremental Build of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:15:32: error: invalid initializer
+  int length =0; char str[100] =0;
+                                ^
+..\main.c:15:6: warning: unused variable 'length' [-Wunused-variable]
+  int length =0; char str[100] =0;
+      ^~~~~~
+..\main.c: In function 'Reverse':
+..\main.c:33:13: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   return(arr, i);
+             ^
+18:11:31 **** Incremental Build of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:15:17: error: invalid initializer
+  char str[100] =0;
+                 ^
+..\main.c: In function 'Reverse':
+..\main.c:33:13: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   return(arr, i);
+             ^
+18:11:42 **** Incremental Build of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:15:18: error: invalid initializer
+  char str1[100] =0;
+                  ^
+..\main.c:17:7: error: 'str' undeclared (first use in this function)
+  gets(str);
+       ^~~
+..\main.c:17:7: note: each undeclared identifier is reported only once for each function it appears in
+..\main.c:15:7: warning: unused variable 'str1' [-Wunused-variable]
+  char str1[100] =0;
+       ^~~~
+..\main.c: In function 'Reverse':
+..\main.c:33:13: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   return(arr, i);
+             ^
+18:12:05 **** Incremental Build of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Reverse':
+..\main.c:33:13: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   return(arr, i);
+             ^
+gcc -o "C_Functions_3(Reverse a string (Recursion)).exe" main.o 
+Info: Nothing to build for C_Functions_3(Reverse a string (Recursion))
+Info: Nothing to build for C_Functions_3(Reverse a string (Recursion))
+18:13:51 **** Incremental Build of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Reverse':
+..\main.c:34:13: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   return(arr, i);
+             ^
+gcc -o "C_Functions_3(Reverse a string (Recursion)).exe" main.o 
+Info: Nothing to build for C_Functions_3(Reverse a string (Recursion))
+18:15:54 **** Incremental Build of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Reverse':
+..\main.c:34:13: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   return(arr, i);
+             ^
+gcc -o "C_Functions_3(Reverse a string (Recursion)).exe" main.o 
+Info: Nothing to build for C_Functions_3(Reverse a string (Recursion))
+18:16:32 **** Incremental Build of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Reverse':
+..\main.c:34:14: error: expected expression before ']' token
+   return(arr[] , i);
+              ^
+..\main.c:34:16: warning: left-hand operand of comma expression has no effect [-Wunused-value]
+   return(arr[] , i);
+                ^
+18:18:21 **** Incremental Build of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "C_Functions_3(Reverse a string (Recursion)).exe" main.o 
+Info: Nothing to build for C_Functions_3(Reverse a string (Recursion))
+Info: Nothing to build for C_Functions_3(Reverse a string (Recursion))
+18:22:21 **** Incremental Build of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "C_Functions_3(Reverse a string (Recursion)).exe" main.o 
+Info: Nothing to build for C_Functions_3(Reverse a string (Recursion))
+Info: Nothing to build for C_Functions_3(Reverse a string (Recursion))
+Info: Nothing to build for C_Functions_3(Reverse a string (Recursion))
