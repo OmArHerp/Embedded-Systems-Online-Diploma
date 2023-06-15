@@ -1,0 +1,9 @@
+00:52:44 **** Rebuild of configuration Debug for project Practicing ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Practicing.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Practicing.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+
+00:52:44 Build Finished (took 307ms)
+

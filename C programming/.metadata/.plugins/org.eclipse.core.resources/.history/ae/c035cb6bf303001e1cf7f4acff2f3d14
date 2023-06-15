@@ -1,0 +1,66 @@
+/*
+ * main.c
+ *
+ *  Created on: May 14, 2023
+ *      Author: Herp
+ */
+
+#include<stdio.h>
+#include<string.h>
+#include<Math.h>
+
+
+void Reverse(char x[],int n,int spaces[]);
+
+int main()
+{
+	char str[100]; int arr[10]={0}; int n=0; int last_char=0;
+	printf("Enter : ");
+	fflush(stdin);fflush(stdout);
+	gets(str);
+	while(str[last_char] != 0)
+	{
+		if(str[last_char] == ' ')
+		{
+			arr[n] = last_char;
+			n++;
+
+		}
+		last_char++;
+	}
+	printf("\n\r");
+	Reverse(str,n,arr);
+
+
+	return 0;
+}
+
+void Reverse(char x[],int n,int spaces[])
+{
+	int s = spaces[n-2]; int i=9,j=n;
+	int a=0;
+	/*
+	printf("%s",&x[spaces[n-1]]);
+	--n;
+	printf("%c", ' ');
+	s = spaces[n-2]; */
+	//printf("%s",&x[spaces[n-1]]);
+	for(i=0; i<j ; i++)
+	{
+		a = spaces[n-i-1] + 1;
+		while(x[a]!= ' ')
+		{
+			printf("%s",x[a]);
+			++a;
+		}
+		--n;
+
+	}
+
+}
+/*
+ * int n=0;
+	printf("Enter the number:");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&n);
+ */

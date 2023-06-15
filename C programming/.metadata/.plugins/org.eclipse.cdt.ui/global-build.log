@@ -1,586 +1,114 @@
-03:59:27 **** Clean-only build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
-rm -rf "C_Array_String1_4(Insert an element in array).exe" main.d main.o 
-rm: cannot remove `C_Array_String1_4(Insert an element in array).exe': Permission denied
-03:59:36 **** Rebuild of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
+00:52:44 **** Rebuild of configuration Debug for project Practicing ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
-c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Array_String1_4(Insert an element in array).exe: Permission denied
+gcc -o Practicing.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Practicing.exe: Permission denied
 collect2.exe: error: ld returned 1 exit status
-03:59:45 **** Incremental Build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
+00:54:05 **** Rebuild of configuration Debug for project Pract ****
 Info: Internal Builder is used for build
-gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
-c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Array_String1_4(Insert an element in array).exe: Permission denied
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o Pract.exe main.o 
+Info: Nothing to build for Pract
+01:02:31 **** Rebuild of configuration Debug for project Unit2_Lesson6_Assignment 5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "Unit2_Lesson6_Assignment 5.exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
 collect2.exe: error: ld returned 1 exit status
-04:34:42 **** Rebuild of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
+01:02:43 **** Incremental Build of configuration Debug for project Unit2_Lesson6_Assignment 5 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
+..\main.c:14:6: warning: return type of 'main' is not 'int' [-Wmain]
  void main()
       ^~~~
-gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
-Info: Nothing to build for C_Array_String1_4(Insert an element in array)
-04:35:14 **** Incremental Build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
+gcc -o "Unit2_Lesson6_Assignment 5.exe" main.o 
+01:05:40 **** Incremental Build of configuration Debug for project Unit2_Lesson6_Assignment 5 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-..\main.c: In function 'main':
-..\main.c:21:9: error: 'stdio' undeclared (first use in this function)
-  fflush(stdio);
-         ^~~~~
-..\main.c:21:9: note: each undeclared identifier is reported only once for each function it appears in
-04:35:16 **** Incremental Build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
+gcc -o "Unit2_Lesson6_Assignment 5.exe" main.o 
+01:06:16 **** Incremental Build of configuration Debug for project Unit2_Lesson6_Assignment 5 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-..\main.c: In function 'main':
-..\main.c:21:9: error: 'stdio' undeclared (first use in this function)
-  fflush(stdio);
-         ^~~~~
-..\main.c:21:9: note: each undeclared identifier is reported only once for each function it appears in
-04:36:14 **** Incremental Build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
-c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Array_String1_4(Insert an element in array).exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
-04:36:16 **** Incremental Build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
-Info: Internal Builder is used for build
-gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
-c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Array_String1_4(Insert an element in array).exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
-04:36:24 **** Incremental Build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
-c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Array_String1_4(Insert an element in array).exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
-04:36:26 **** Incremental Build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
-Info: Internal Builder is used for build
-gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
-c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Array_String1_4(Insert an element in array).exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
-04:37:26 **** Incremental Build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
-Info: Internal Builder is used for build
-gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
-Info: Nothing to build for C_Array_String1_4(Insert an element in array)
-Info: Nothing to build for C_Array_String1_4(Insert an element in array)
-Info: Nothing to build for C_Array_String1_4(Insert an element in array)
-Info: Nothing to build for C_Array_String1_4(Insert an element in array)
-Info: Nothing to build for C_Array_String1_4(Insert an element in array)
-Info: Nothing to build for C_Array_String1_4(Insert an element in array)
-Info: Nothing to build for C_Array_String1_4(Insert an element in array)
-04:51:58 **** Incremental Build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
-Info: Nothing to build for C_Array_String1_4(Insert an element in array)
-Info: Nothing to build for C_Array_String1_4(Insert an element in array)
-Info: Nothing to build for C_Array_String1_4(Insert an element in array)
-Info: Nothing to build for C_Array_String1_4(Insert an element in array)
-05:02:20 **** Incremental Build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-..\main.c: In function 'main':
-..\main.c:17:6: warning: unused variable 'temp' [-Wunused-variable]
-  int temp;
-      ^~~~
-gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
-Info: Nothing to build for C_Array_String1_4(Insert an element in array)
-05:03:09 **** Incremental Build of configuration Debug for project C_Array_String1_4(Insert an element in array) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:10:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-..\main.c: In function 'main':
-..\main.c:17:6: warning: unused variable 'temp' [-Wunused-variable]
-  int temp;
-      ^~~~
-gcc -o "C_Array_String1_4(Insert an element in array).exe" main.o 
-Info: Nothing to build for C_Array_String1_4(Insert an element in array)
-Info: Nothing to build for C_Array_String1_4(Insert an element in array)
-13:26:34 **** Rebuild of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-..\main.c: In function 'main':
-..\main.c:21:13: warning: passing argument 1 of 'strlwr' makes pointer from integer without a cast [-Wint-conversion]
-   if(strlwr(string1[i]) == strlwr(c))
-             ^~~~~~~
-In file included from ..\main.c:9:0:
-c:\mingw\include\string.h:140:40: note: expected 'char *' but argument is of type 'char'
- _CRTIMP __cdecl __MINGW_NOTHROW  char *strlwr (char *);
-                                        ^~~~~~
-..\main.c:21:35: warning: passing argument 1 of 'strlwr' makes pointer from integer without a cast [-Wint-conversion]
-   if(strlwr(string1[i]) == strlwr(c))
-                                   ^
-In file included from ..\main.c:9:0:
-c:\mingw\include\string.h:140:40: note: expected 'char *' but argument is of type 'char'
- _CRTIMP __cdecl __MINGW_NOTHROW  char *strlwr (char *);
-                                        ^~~~~~
-gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
-13:28:04 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-..\main.c: In function 'main':
-..\main.c:21:13: warning: passing argument 1 of 'strlwr' makes pointer from integer without a cast [-Wint-conversion]
-   if(strlwr(string1[i]) ==c)
-             ^~~~~~~
-In file included from ..\main.c:9:0:
-c:\mingw\include\string.h:140:40: note: expected 'char *' but argument is of type 'char'
- _CRTIMP __cdecl __MINGW_NOTHROW  char *strlwr (char *);
-                                        ^~~~~~
-..\main.c:21:25: warning: comparison between pointer and integer
-   if(strlwr(string1[i]) ==c)
-                         ^~
-gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
-13:29:05 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
-13:29:57 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-..\main.c: In function 'main':
-..\main.c:19:9: warning: passing argument 1 of 'strlwr' makes pointer from integer without a cast [-Wint-conversion]
-  strlwr(c);
-         ^
-In file included from ..\main.c:9:0:
-c:\mingw\include\string.h:140:40: note: expected 'char *' but argument is of type 'char'
- _CRTIMP __cdecl __MINGW_NOTHROW  char *strlwr (char *);
-                                        ^~~~~~
-gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
-13:32:46 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
-13:33:09 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
-Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
-13:35:52 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
-Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
-13:37:54 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
-Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
-13:38:42 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
-Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
-Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
-13:42:52 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
-Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
-13:43:19 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
-Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
-13:43:51 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
-13:44:18 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
- void main()
-      ^~~~
-gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
-Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
-13:45:21 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
-Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
-13:47:24 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
-Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
-13:47:38 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
-Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
-13:48:00 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
-Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
-13:49:09 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
-Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
-13:50:05 **** Incremental Build of configuration Debug for project C_Array_String2_1(Freq of characters in a string) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o "C_Array_String2_1(Freq of characters in a string).exe" main.o 
-Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
-Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
-Info: Nothing to build for C_Array_String2_1(Freq of characters in a string)
-14:03:20 **** Rebuild of configuration Debug for project C_Array_String(Length of a string) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o "C_Array_String(Length of a string).exe" main.o 
-14:03:37 **** Incremental Build of configuration Debug for project C_Array_String(Length of a string) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o "C_Array_String(Length of a string).exe" main.o 
-Info: Nothing to build for C_Array_String(Length of a string)
-Info: Nothing to build for C_Array_String(Length of a string)
-Info: Nothing to build for C_Array_String(Length of a string)
-14:12:46 **** Rebuild of configuration Debug for project C_Array_String2_3(Reverse String) ****
+gcc -o "Unit2_Lesson6_Assignment 5.exe" main.o 
+Info: Nothing to build for Unit2_Lesson6_Assignment 5
+01:06:38 **** Incremental Build of configuration Debug for project Unit2_Lesson6_Assignment 5 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 ..\main.c: In function 'main':
-..\main.c:14:8: warning: unused variable 'c' [-Wunused-variable]
-  int i,c;
-        ^
-gcc -o "C_Array_String2_3(Reverse String).exe" main.o 
-14:13:20 **** Incremental Build of configuration Debug for project C_Array_String2_3(Reverse String) ****
+..\main.c:23:20: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+  printf("\nArea = %d",Area);
+                    ^
+gcc -o "Unit2_Lesson6_Assignment 5.exe" main.o 
+01:06:49 **** Incremental Build of configuration Debug for project Unit2_Lesson6_Assignment 5 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o "C_Array_String2_3(Reverse String).exe" main.o 
-Info: Nothing to build for C_Array_String2_3(Reverse String)
-Info: Nothing to build for C_Array_String2_3(Reverse String)
-14:14:29 **** Incremental Build of configuration Debug for project C_Array_String2_3(Reverse String) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c: In function 'main':
-..\main.c:22:12: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
-   printf("%s",string1[i]);
-            ^
-gcc -o "C_Array_String2_3(Reverse String).exe" main.o 
-Info: Nothing to build for C_Array_String2_3(Reverse String)
-14:14:54 **** Incremental Build of configuration Debug for project C_Array_String2_3(Reverse String) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o "C_Array_String2_3(Reverse String).exe" main.o 
-Info: Nothing to build for C_Array_String2_3(Reverse String)
-05:40:42 **** Rebuild of configuration Debug for project C_Functions_1(Prime Number between Intervals) ****
+gcc -o "Unit2_Lesson6_Assignment 5.exe" main.o 
+Info: Nothing to build for Unit2_Lesson6_Assignment 5
+Info: Nothing to build for Unit2_Lesson6_Assignment 5
+04:18:03 **** Rebuild of configuration Debug for project Unit2_Lesson6_Assignment 2 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 ..\main.c: In function 'main':
-..\main.c:17:2: error: too few arguments to function 'Prime_Number'
-  Prime_Number();
-  ^~~~~~~~~~~~
-..\main.c:9:6: note: declared here
- void Prime_Number(int , int);
-      ^~~~~~~~~~~~
-..\main.c: In function 'Prime_Number':
-..\main.c:32:2: warning: statement with no effect [-Wunused-value]
-  for(x; x<=y ; x++)
-  ^~~
-05:41:01 **** Incremental Build of configuration Debug for project C_Functions_1(Prime Number between Intervals) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c: In function 'Prime_Number':
-..\main.c:32:2: warning: statement with no effect [-Wunused-value]
-  for(x; x<=y ; x++)
-  ^~~
-gcc -o "C_Functions_1(Prime Number between Intervals).exe" main.o 
-05:41:47 **** Incremental Build of configuration Debug for project C_Functions_1(Prime Number between Intervals) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c: In function 'Prime_Number':
-..\main.c:33:2: warning: statement with no effect [-Wunused-value]
-  for(x; x<=y ; x++)
-  ^~~
-gcc -o "C_Functions_1(Prime Number between Intervals).exe" main.o 
-Info: Nothing to build for C_Functions_1(Prime Number between Intervals)
-05:42:47 **** Incremental Build of configuration Debug for project C_Functions_1(Prime Number between Intervals) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c: In function 'Prime_Number':
-..\main.c:27:2: warning: statement with no effect [-Wunused-value]
-  for(x; x<=y ; x++)
-  ^~~
-gcc -o "C_Functions_1(Prime Number between Intervals).exe" main.o 
-05:43:56 **** Incremental Build of configuration Debug for project C_Functions_1(Prime Number between Intervals) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c: In function 'Prime_Number':
-..\main.c:27:2: warning: statement with no effect [-Wunused-value]
-  for(x; x<=y ; x++)
-  ^~~
-gcc -o "C_Functions_1(Prime Number between Intervals).exe" main.o 
-Info: Nothing to build for C_Functions_1(Prime Number between Intervals)
-05:44:14 **** Incremental Build of configuration Debug for project C_Functions_1(Prime Number between Intervals) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c: In function 'Prime_Number':
-..\main.c:27:2: warning: statement with no effect [-Wunused-value]
-  for(x; x<=y ; x++)
-  ^~~
-gcc -o "C_Functions_1(Prime Number between Intervals).exe" main.o 
-c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Functions_1(Prime Number between Intervals).exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
-05:44:16 **** Incremental Build of configuration Debug for project C_Functions_1(Prime Number between Intervals) ****
-Info: Internal Builder is used for build
-gcc -o "C_Functions_1(Prime Number between Intervals).exe" main.o 
-c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file C_Functions_1(Prime Number between Intervals).exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
-06:23:25 **** Rebuild of configuration Debug for project C_Functions_2(Factorial Recursion) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C_Functions_2(Factorial Recursion).o" "..\\src\\C_Functions_2(Factorial Recursion).c" 
-gcc -o "C_Functions_2(Factorial Recursion).exe" "src\\C_Functions_2(Factorial Recursion).o" 
-Info: Nothing to build for C_Functions_2(Factorial Recursion)
-06:25:02 **** Incremental Build of configuration Debug for project C_Functions_2(Factorial Recursion) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C_Functions_2(Factorial Recursion).o" "..\\src\\C_Functions_2(Factorial Recursion).c" 
-gcc -o "C_Functions_2(Factorial Recursion).exe" "src\\C_Functions_2(Factorial Recursion).o" 
-Info: Nothing to build for C_Functions_2(Factorial Recursion)
-06:26:14 **** Incremental Build of configuration Debug for project C_Functions_2(Factorial Recursion) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\C_Functions_2(Factorial Recursion).o" "..\\src\\C_Functions_2(Factorial Recursion).c" 
-gcc -o "C_Functions_2(Factorial Recursion).exe" "src\\C_Functions_2(Factorial Recursion).o" 
-Info: Nothing to build for C_Functions_2(Factorial Recursion)
-06:27:26 **** Rebuild of configuration Debug for project Factorial Recursion ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o "Factorial Recursion.exe" main.o 
-Info: Nothing to build for Factorial Recursion
-06:31:45 **** Incremental Build of configuration Debug for project Factorial Recursion ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o "Factorial Recursion.exe" main.o 
-Info: Nothing to build for Factorial Recursion
-06:59:39 **** Rebuild of configuration Debug for project C_Functions_4(Power Using Recursion) ****
+..\main.c:23:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+  scanf("%d",&Information1.Feet);
+          ^
+..\main.c:29:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+  scanf("%d",&Information2.Feet);
+          ^
+g++ -o "Unit2_Lesson6_Assignment 2.exe" main.o 
+04:18:19 **** Incremental Build of configuration Debug for project Unit2_Lesson6_Assignment 2 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 ..\main.c: In function 'main':
-..\main.c:18:2: warning: implicit declaration of function 'print' [-Wimplicit-function-declaration]
-  print("%d power of %d is %d",n,m,Power_Function(n,m));
-  ^~~~~
-gcc -o "C_Functions_4(Power Using Recursion).exe" main.o 
-main.o: In function `main':
-D:\Omar\My-GitHub\Embedded-Systems-Online-Diploma\C programming\C_Functions_4(Power Using Recursion)\Debug/../main.c:18: undefined reference to `print'
-collect2.exe: error: ld returned 1 exit status
-06:59:48 **** Incremental Build of configuration Debug for project C_Functions_4(Power Using Recursion) ****
+..\main.c:23:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+  scanf("%d",&Information1.Feet);
+          ^
+..\main.c:25:10: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'int *' [-Wformat=]
+  scanf("%f",&Information1.Inch);
+          ^
+..\main.c:29:10: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'float *' [-Wformat=]
+  scanf("%d",&Information2.Feet);
+          ^
+..\main.c:31:10: warning: format '%f' expects argument of type 'float *', but argument 2 has type 'int *' [-Wformat=]
+  scanf("%f",&Information2.Inch);
+          ^
+g++ -o "Unit2_Lesson6_Assignment 2.exe" main.o 
+04:19:41 **** Incremental Build of configuration Debug for project Unit2_Lesson6_Assignment 2 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o "C_Functions_4(Power Using Recursion).exe" main.o 
-07:00:06 **** Incremental Build of configuration Debug for project C_Functions_4(Power Using Recursion) ****
+g++ -o "Unit2_Lesson6_Assignment 2.exe" main.o 
+04:22:02 **** Incremental Build of configuration Debug for project Unit2_Lesson6_Assignment 2 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o "C_Functions_4(Power Using Recursion).exe" main.o 
-Info: Nothing to build for C_Functions_4(Power Using Recursion)
-17:43:02 **** Rebuild of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o "C_Functions_3(Reverse a string (Recursion)).exe" main.o 
-Info: Nothing to build for C_Functions_3(Reverse a string (Recursion))
-18:09:57 **** Incremental Build of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
+g++ -o "Unit2_Lesson6_Assignment 2.exe" main.o 
+04:22:34 **** Incremental Build of configuration Debug for project Unit2_Lesson6_Assignment 2 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 ..\main.c: In function 'main':
-..\main.c:15:32: error: invalid initializer
-  int length =0; char str[100] =0;
+..\main.c:43:32: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+  printf("\nSum of distances = %d' -%f\"");
                                 ^
-..\main.c:19:10: warning: passing argument 1 of 'Reverse' makes integer from pointer without a cast [-Wint-conversion]
-  Reverse(str,strlen(str));
-          ^~~
-..\main.c:11:6: note: expected 'char' but argument is of type 'char *'
- char Reverse(char , int);
-      ^~~~~~~
-..\main.c:15:6: warning: unused variable 'length' [-Wunused-variable]
-  int length =0; char str[100] =0;
-      ^~~~~~
-..\main.c: At top level:
-..\main.c:23:6: error: conflicting types for 'Reverse'
- char Reverse(char arr[], int i)
-      ^~~~~~~
-..\main.c:11:6: note: previous declaration of 'Reverse' was here
- char Reverse(char , int);
-      ^~~~~~~
-..\main.c: In function 'Reverse':
-..\main.c:33:13: warning: left-hand operand of comma expression has no effect [-Wunused-value]
-   return(arr, i);
-             ^
-18:10:58 **** Incremental Build of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
+..\main.c:43:37: warning: format '%f' expects a matching 'double' argument [-Wformat=]
+  printf("\nSum of distances = %d' -%f\"");
+                                     ^
+g++ -o "Unit2_Lesson6_Assignment 2.exe" main.o 
+04:22:53 **** Incremental Build of configuration Debug for project Unit2_Lesson6_Assignment 2 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c: In function 'main':
-..\main.c:15:32: error: invalid initializer
-  int length =0; char str[100] =0;
-                                ^
-..\main.c:19:10: warning: passing argument 1 of 'Reverse' makes integer from pointer without a cast [-Wint-conversion]
-  Reverse(str,strlen(str));
-          ^~~
-..\main.c:11:6: note: expected 'char' but argument is of type 'char *'
- char Reverse(char , int);
-      ^~~~~~~
-..\main.c:15:6: warning: unused variable 'length' [-Wunused-variable]
-  int length =0; char str[100] =0;
-      ^~~~~~
-..\main.c: At top level:
-..\main.c:23:6: error: conflicting types for 'Reverse'
- char Reverse(char arr[], int i)
-      ^~~~~~~
-..\main.c:11:6: note: previous declaration of 'Reverse' was here
- char Reverse(char , int);
-      ^~~~~~~
-..\main.c: In function 'Reverse':
-..\main.c:33:13: warning: left-hand operand of comma expression has no effect [-Wunused-value]
-   return(arr, i);
-             ^
-18:11:00 **** Incremental Build of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
+g++ -o "Unit2_Lesson6_Assignment 2.exe" main.o 
+04:23:32 **** Incremental Build of configuration Debug for project Unit2_Lesson6_Assignment 2 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c: In function 'main':
-..\main.c:15:32: error: invalid initializer
-  int length =0; char str[100] =0;
-                                ^
-..\main.c:15:6: warning: unused variable 'length' [-Wunused-variable]
-  int length =0; char str[100] =0;
-      ^~~~~~
-..\main.c: In function 'Reverse':
-..\main.c:33:13: warning: left-hand operand of comma expression has no effect [-Wunused-value]
-   return(arr, i);
-             ^
-18:11:31 **** Incremental Build of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
+g++ -o "Unit2_Lesson6_Assignment 2.exe" main.o 
+Info: Nothing to build for Unit2_Lesson6_Assignment 2
+04:24:02 **** Incremental Build of configuration Debug for project Unit2_Lesson6_Assignment 2 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c: In function 'main':
-..\main.c:15:17: error: invalid initializer
-  char str[100] =0;
-                 ^
-..\main.c: In function 'Reverse':
-..\main.c:33:13: warning: left-hand operand of comma expression has no effect [-Wunused-value]
-   return(arr, i);
-             ^
-18:11:42 **** Incremental Build of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
+g++ -o "Unit2_Lesson6_Assignment 2.exe" main.o 
+Info: Nothing to build for Unit2_Lesson6_Assignment 2
+04:25:15 **** Incremental Build of configuration Debug for project Unit2_Lesson6_Assignment 2 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c: In function 'main':
-..\main.c:15:18: error: invalid initializer
-  char str1[100] =0;
-                  ^
-..\main.c:17:7: error: 'str' undeclared (first use in this function)
-  gets(str);
-       ^~~
-..\main.c:17:7: note: each undeclared identifier is reported only once for each function it appears in
-..\main.c:15:7: warning: unused variable 'str1' [-Wunused-variable]
-  char str1[100] =0;
-       ^~~~
-..\main.c: In function 'Reverse':
-..\main.c:33:13: warning: left-hand operand of comma expression has no effect [-Wunused-value]
-   return(arr, i);
-             ^
-18:12:05 **** Incremental Build of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c: In function 'Reverse':
-..\main.c:33:13: warning: left-hand operand of comma expression has no effect [-Wunused-value]
-   return(arr, i);
-             ^
-gcc -o "C_Functions_3(Reverse a string (Recursion)).exe" main.o 
-Info: Nothing to build for C_Functions_3(Reverse a string (Recursion))
-Info: Nothing to build for C_Functions_3(Reverse a string (Recursion))
-18:13:51 **** Incremental Build of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c: In function 'Reverse':
-..\main.c:34:13: warning: left-hand operand of comma expression has no effect [-Wunused-value]
-   return(arr, i);
-             ^
-gcc -o "C_Functions_3(Reverse a string (Recursion)).exe" main.o 
-Info: Nothing to build for C_Functions_3(Reverse a string (Recursion))
-18:15:54 **** Incremental Build of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c: In function 'Reverse':
-..\main.c:34:13: warning: left-hand operand of comma expression has no effect [-Wunused-value]
-   return(arr, i);
-             ^
-gcc -o "C_Functions_3(Reverse a string (Recursion)).exe" main.o 
-Info: Nothing to build for C_Functions_3(Reverse a string (Recursion))
-18:16:32 **** Incremental Build of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c: In function 'Reverse':
-..\main.c:34:14: error: expected expression before ']' token
-   return(arr[] , i);
-              ^
-..\main.c:34:16: warning: left-hand operand of comma expression has no effect [-Wunused-value]
-   return(arr[] , i);
-                ^
-18:18:21 **** Incremental Build of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o "C_Functions_3(Reverse a string (Recursion)).exe" main.o 
-Info: Nothing to build for C_Functions_3(Reverse a string (Recursion))
-Info: Nothing to build for C_Functions_3(Reverse a string (Recursion))
-18:22:21 **** Incremental Build of configuration Debug for project C_Functions_3(Reverse a string (Recursion)) ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc -o "C_Functions_3(Reverse a string (Recursion)).exe" main.o 
-Info: Nothing to build for C_Functions_3(Reverse a string (Recursion))
-Info: Nothing to build for C_Functions_3(Reverse a string (Recursion))
-Info: Nothing to build for C_Functions_3(Reverse a string (Recursion))
+g++ -o "Unit2_Lesson6_Assignment 2.exe" main.o 
+Info: Nothing to build for Unit2_Lesson6_Assignment 2
+Info: Nothing to build for Unit2_Lesson6_Assignment 2

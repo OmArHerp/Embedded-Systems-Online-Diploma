@@ -1,0 +1,27 @@
+/*
+ * main.c
+ *
+ *  Created on: Jun 12, 2023
+ *      Author: OmArHerp
+ */
+
+#include<stdio.h>
+#include<stdlib.h>
+
+
+struct SCredits {
+	char name[50];
+	int roll;
+	int marks;
+};
+void main()
+{
+	struct SCredits student;
+
+	printf("Enter your name,roll and marks respectively : ");
+	gets(student.name);
+	scanf("%d%d",&student.roll,&student.marks);
+
+}
+
+

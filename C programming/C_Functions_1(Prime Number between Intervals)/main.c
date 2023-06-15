@@ -24,7 +24,7 @@ void Prime_Number(int x, int y)
 {
 	int j;
 	int Prime = 1;
-	for(x; x<=y ; x++)
+	for(; x<=y ; x++)
 	{
 		for(j=2 ; j<x ; j++)
 		{

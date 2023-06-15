@@ -1,0 +1,9 @@
+23:44:12 **** Rebuild of configuration Debug for project Unit2_Lesson6_Assignment 4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "Unit2_Lesson6_Assignment 4.exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../libmingw32.a(main.o):(.text.startup+0xa0): undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+
+23:44:12 Build Finished (took 462ms)
+

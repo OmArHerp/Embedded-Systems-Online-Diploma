@@ -1,0 +1,72 @@
+/*
+ * main.c
+ *
+ *  Created on: May 14, 2023
+ *      Author: Herp
+ */
+
+#include<stdio.h>
+#include<string.h>
+#include<Math.h>
+
+
+int Reverse(int x[],int n);
+
+int main()
+{
+	int arr[100]={0}; int n=0;int i;
+	printf("Enter size of array : ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&n);
+	printf("\nEnter the elements of the array: ");
+	fflush(stdin);fflush(stdout);
+	for(i=0; i<n ; i++)
+	{
+		scanf("%d",arr+i);
+	}
+
+	printf("\n\r");
+	printf("Unique Number is : %d",Reverse(arr,n));
+
+	return 0;
+}
+
+int Reverse(int x[],int n)
+{
+	int i=0; int UniqueFlag = 0; int j=0;
+
+	Unique:
+
+	++j;
+	if(UniqueFlag != 0)
+		return UniqueFlag;
+	else if(j==n && UniqueFlag ==0 )
+		return 0;
+
+	for(i=0; i<n ; i++)
+	{
+
+		if(j == n)
+			break;
+
+		if(x[j] == x[i])
+		{
+			break;
+		}
+		else if(i== n-1)
+		{
+			UniqueFlag = x[j];
+			break;
+		}
+
+	}
+	goto Unique;
+
+	return 0;
+}
+/*
+ * int n=0;
+	printf("Enter the number:");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&n);
+ */

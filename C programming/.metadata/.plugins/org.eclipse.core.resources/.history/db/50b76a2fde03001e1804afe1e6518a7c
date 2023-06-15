@@ -1,0 +1,54 @@
+/*
+ * main.c
+ *
+ *  Created on: May 14, 2023
+ *      author: Herp
+ */
+
+#include<stdio.h>
+#include<string.h>
+#include<Math.h>
+
+
+void Prime(int, int);
+
+int main()
+{
+	int R1,R2;
+	printf("Enter Range : ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d , %d",&R1,&R2);
+
+	printf("\nPrime : ");
+	Prime(R1,R2);
+	return 0;
+}
+
+void Prime(int a, int b)
+{
+	int i; int primeFlag = 1 ;
+	for(; a<=b ; a++)
+	{
+		for(i=2; i<a;i++)
+		{
+			if(a%i == 0)
+				primeFlag = 0;
+
+		}
+		if(primeFlag == 1)
+		{
+			printf(" %d ",a);
+		}
+		else
+		{
+			primeFlag = 1;
+		}
+	}
+}
+
+/*
+ * int n=0;
+	printf("Enter the number:");
+	fflush(stdin);fflush(stdout);
+	scanf("%d",&n);
+ */
