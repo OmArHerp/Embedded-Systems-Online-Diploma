@@ -1,0 +1,10 @@
+08:59:19 **** Build of configuration Debug for project Unit2_Lesson8_Assignment1 ****
+make all 
+'Building target: Unit2_Lesson8_Assignment1'
+'Invoking: Cross GCC Linker'
+gcc  -o "Unit2_Lesson8_Assignment1"  ./main.o   
+'Finished building target: Unit2_Lesson8_Assignment1'
+' '
+
+08:59:19 Build Finished (took 394ms)
+

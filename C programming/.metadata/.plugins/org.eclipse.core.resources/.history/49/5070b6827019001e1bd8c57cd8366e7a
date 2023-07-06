@@ -1,0 +1,24 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 3, 2023
+ *      Author: OmArHerp
+ */
+
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+	char *Pa = 0;
+	*Pa = 65;
+	for(; *(Pa) >= 65 && *(Pa) <= 90; *Pa++)
+	{
+		printf("%c",*Pa);
+
+	}
+
+	return 0;
+}
+
+

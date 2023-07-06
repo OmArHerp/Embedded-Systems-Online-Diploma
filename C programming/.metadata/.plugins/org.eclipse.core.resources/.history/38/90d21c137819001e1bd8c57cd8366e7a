@@ -1,0 +1,30 @@
+/*
+ * main.c
+ *
+ *  Created on: Jul 3, 2023
+ *      Author: OmArHerp
+ */
+
+#include<stdio.h>
+#include<string.h>
+
+int main()
+{
+	char str[] = "Omar Alaa"; int i=0;
+	char* str_first_letter = str;
+	while(*str_first_letter != 0)
+	{
+		str_first_letter++;
+	}
+	while(str != str_first_letter)
+	{
+		printf("%c",*str_first_letter);
+		str_first_letter--;
+	}
+	printf("%c",*str_first_letter);
+
+
+	return 0;
+}
+
+
