@@ -1,0 +1,58 @@
+/*
+ * LIFO.c
+ *
+ *  Created on: Aug 5, 2023
+ *      Author: OmArHerp
+ */
+
+#include "LIFO.h"
+
+LIFO_status LIFO_Init(LIFO_Buf_t* stack, DataType* buf, unsigned int length)
+{
+	//If Dynamic array (if existed) returned NULL
+	if(buf == NULL)
+		return LIFO_Null ;
+
+	stack->base = buf;
+	stack->head = buf;
+	stack->length = length;
+	stack->count = 0;
+	return LIFO_No_Error ;
+
+}
+LIFO_status LIFO_Push(LIFO_Buf_t* stack, DataType item)
+{
+	//check if there's a lifo
+	if(!stack->base || !stack->head)
+		return LIFO_Null ;
+
+	//check if lifo is full
+	if(stack->count == stack->length)
+		return LIFO_Full ;
+
+	//Push Value
+	*(stack->head) = item ;
+	stack->head++ ;
+	stack->count++;
+
+
+}
+LIFO_status LIFO_Pop (LIFO_Buf_t* stack, DataType* item)
+{
+	//check if there's a lifo
+	if(!stack->base || !stack->head)
+		return LIFO_Null ;
+
+	//check if lifo is empty
+	if(!stack->count)
+		return LIFO_Empty ;
+
+	//Remove last_value
+	stack->head--;
+	*item = *(stack->head);
+	stack->count--;
+
+	return LIFO_No_Error ;
+
+}
+

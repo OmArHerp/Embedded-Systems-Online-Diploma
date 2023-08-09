@@ -1,0 +1,39 @@
+/*
+ * LIFO.h
+ *
+ *  Created on: Aug 5, 2023
+ *      Author: OmArHerp
+ */
+
+#ifndef LIFO_H_
+#define LIFO_H_
+
+/*****************************************_Includes_*******************************************/
+#include<stdint.h>
+
+
+/**************************************_DataType_Config***************************************/
+									/*choose the data type*/
+#define DataType		uint32_t
+
+/**************************************_Data_Definitions**************************************/
+typedef struct {
+	DataType  length;
+	DataType  count;
+	DataType* base;
+	DataType* head;
+
+}LIFO_Buf_t;
+
+typedef enum {
+	LIFO_No_Error,
+	LIFO_Full,
+	LIFO_Empty,
+	LIFO_Null //No Array or the user is passing dynamic memory allocation
+}LIFO_status;
+
+/******************************************_ADT_***********************************************/
+LIFO_Push(LIFO_Buf_t stack,DataType item);
+
+
+#endif /* LIFO_H_ */

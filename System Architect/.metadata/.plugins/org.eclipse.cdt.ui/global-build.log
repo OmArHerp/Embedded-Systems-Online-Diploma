@@ -1,0 +1,519 @@
+10:16:05 **** Rebuild of configuration Debug for project LIFO_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LIFO.o "..\\LIFO.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o LIFO_buffer.exe LIFO.o main.o 
+Info: Nothing to build for LIFO_buffer
+Info: Nothing to build for LIFO_buffer
+Info: Nothing to build for LIFO_buffer
+Info: Nothing to build for LIFO_buffer
+13:39:11 **** Incremental Build of configuration Debug for project LIFO_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:36:29: warning: pointer targets in passing argument 2 of 'LIFO_Pop' differ in signedness [-Wpointer-sign]
+   if ( LIFO_Pop(&uart_lifo, &temp) == LIFO_No_Error )
+                             ^
+In file included from ..\main.c:9:0:
+..\LIFO.h:39:13: note: expected 'uint32_t * {aka unsigned int *}' but argument is of type 'int *'
+ LIFO_status LIFO_Pop (LIFO_Buf_t* stack,DataType* item);
+             ^~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LIFO.o "..\\LIFO.c" 
+..\LIFO.c: In function 'LIFO_Push':
+..\LIFO.c:39:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+gcc -o LIFO_buffer.exe LIFO.o main.o 
+13:39:42 **** Incremental Build of configuration Debug for project LIFO_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LIFO.o "..\\LIFO.c" 
+..\LIFO.c: In function 'LIFO_Push':
+..\LIFO.c:39:1: error: expected ';' before '}' token
+ }
+ ^
+13:39:46 **** Incremental Build of configuration Debug for project LIFO_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LIFO.o "..\\LIFO.c" 
+gcc -o LIFO_buffer.exe LIFO.o main.o 
+13:41:42 **** Incremental Build of configuration Debug for project LIFO_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o LIFO.o "..\\LIFO.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:36:29: warning: pointer targets in passing argument 2 of 'LIFO_Pop' differ in signedness [-Wpointer-sign]
+   if ( LIFO_Pop(&uart_lifo, &temp) == LIFO_No_Error )
+                             ^
+In file included from ..\main.c:9:0:
+..\LIFO.h:39:13: note: expected 'uint32_t * {aka unsigned int *}' but argument is of type 'int *'
+ LIFO_status LIFO_Pop (LIFO_Buf_t* stack,DataType* item);
+             ^~~~~~~~
+gcc -o LIFO_buffer.exe LIFO.o main.o 
+13:41:59 **** Incremental Build of configuration Debug for project LIFO_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:36:29: warning: pointer targets in passing argument 2 of 'LIFO_Pop' differ in signedness [-Wpointer-sign]
+   if ( LIFO_Pop(&uart_lifo, &temp) == LIFO_No_Error )
+                             ^
+In file included from ..\main.c:9:0:
+..\LIFO.h:39:13: note: expected 'uint32_t * {aka unsigned int *}' but argument is of type 'int *'
+ LIFO_status LIFO_Pop (LIFO_Buf_t* stack,DataType* item);
+             ^~~~~~~~
+gcc -o LIFO_buffer.exe LIFO.o main.o 
+Info: Nothing to build for LIFO_buffer
+17:02:00 **** Rebuild of configuration Debug for project FIFO_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:30:32: warning: passing argument 2 of 'FIFO_Dequeue' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (FIFO_Dequeue(&FIFO_UART  ,&temp) == FIFO_No_Error)
+                                ^
+In file included from ..\main.c:8:0:
+..\FIFO.h:46:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ FIFO_status FIFO_Dequeue (FIFO_Buf_t* queue , DataType* item);
+             ^~~~~~~~~~~~
+..\main.c:32:32: warning: passing argument 2 of 'FIFO_Dequeue' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (FIFO_Dequeue(&FIFO_UART  ,&temp) == FIFO_No_Error)
+                                ^
+In file included from ..\main.c:8:0:
+..\FIFO.h:46:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ FIFO_status FIFO_Dequeue (FIFO_Buf_t* queue , DataType* item);
+             ^~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o FIFO.o "..\\FIFO.c" 
+gcc -o FIFO_buffer.exe FIFO.o main.o 
+17:02:58 **** Incremental Build of configuration Debug for project FIFO_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:30:22: error: expected expression before 'FIFO_Buf_t'
+  if (FIFO_Dequeue(&(*FIFO_Buf_t)FIFO_UART  ,&temp) == FIFO_No_Error)
+                      ^~~~~~~~~~
+..\main.c:30:33: error: expected ')' before 'FIFO_UART'
+  if (FIFO_Dequeue(&(*FIFO_Buf_t)FIFO_UART  ,&temp) == FIFO_No_Error)
+                                 ^~~~~~~~~
+..\main.c:30:6: error: too few arguments to function 'FIFO_Dequeue'
+  if (FIFO_Dequeue(&(*FIFO_Buf_t)FIFO_UART  ,&temp) == FIFO_No_Error)
+      ^~~~~~~~~~~~
+In file included from ..\main.c:8:0:
+..\FIFO.h:46:13: note: declared here
+ FIFO_status FIFO_Dequeue (FIFO_Buf_t* queue , DataType* item);
+             ^~~~~~~~~~~~
+..\main.c:32:32: warning: passing argument 2 of 'FIFO_Dequeue' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (FIFO_Dequeue(&FIFO_UART  ,&temp) == FIFO_No_Error)
+                                ^
+In file included from ..\main.c:8:0:
+..\FIFO.h:46:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ FIFO_status FIFO_Dequeue (FIFO_Buf_t* queue , DataType* item);
+             ^~~~~~~~~~~~
+17:03:10 **** Incremental Build of configuration Debug for project FIFO_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:30:2: error: cannot convert to a pointer type
+  if (FIFO_Dequeue(&(FIFO_Buf_t*)FIFO_UART  ,&temp) == FIFO_No_Error)
+  ^~
+..\main.c:30:19: error: lvalue required as unary '&' operand
+  if (FIFO_Dequeue(&(FIFO_Buf_t*)FIFO_UART  ,&temp) == FIFO_No_Error)
+                   ^
+..\main.c:30:45: warning: passing argument 2 of 'FIFO_Dequeue' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (FIFO_Dequeue(&(FIFO_Buf_t*)FIFO_UART  ,&temp) == FIFO_No_Error)
+                                             ^
+In file included from ..\main.c:8:0:
+..\FIFO.h:46:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ FIFO_status FIFO_Dequeue (FIFO_Buf_t* queue , DataType* item);
+             ^~~~~~~~~~~~
+..\main.c:32:32: warning: passing argument 2 of 'FIFO_Dequeue' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (FIFO_Dequeue(&FIFO_UART  ,&temp) == FIFO_No_Error)
+                                ^
+In file included from ..\main.c:8:0:
+..\FIFO.h:46:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ FIFO_status FIFO_Dequeue (FIFO_Buf_t* queue , DataType* item);
+             ^~~~~~~~~~~~
+17:03:30 **** Incremental Build of configuration Debug for project FIFO_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:30:46: warning: passing argument 2 of 'FIFO_Dequeue' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (FIFO_Dequeue((FIFO_Buf_t*) &FIFO_UART  ,&temp) == FIFO_No_Error)
+                                              ^
+In file included from ..\main.c:8:0:
+..\FIFO.h:46:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ FIFO_status FIFO_Dequeue (FIFO_Buf_t* queue , DataType* item);
+             ^~~~~~~~~~~~
+..\main.c:32:32: warning: passing argument 2 of 'FIFO_Dequeue' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (FIFO_Dequeue(&FIFO_UART  ,&temp) == FIFO_No_Error)
+                                ^
+In file included from ..\main.c:8:0:
+..\FIFO.h:46:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ FIFO_status FIFO_Dequeue (FIFO_Buf_t* queue , DataType* item);
+             ^~~~~~~~~~~~
+gcc -o FIFO_buffer.exe FIFO.o main.o 
+17:03:48 **** Incremental Build of configuration Debug for project FIFO_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:30:32: warning: passing argument 2 of 'FIFO_Dequeue' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (FIFO_Dequeue(&FIFO_UART  ,&temp) == FIFO_No_Error)
+                                ^
+In file included from ..\main.c:8:0:
+..\FIFO.h:46:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ FIFO_status FIFO_Dequeue (FIFO_Buf_t* queue , DataType* item);
+             ^~~~~~~~~~~~
+..\main.c:32:32: warning: passing argument 2 of 'FIFO_Dequeue' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (FIFO_Dequeue(&FIFO_UART  ,&temp) == FIFO_No_Error)
+                                ^
+In file included from ..\main.c:8:0:
+..\FIFO.h:46:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ FIFO_status FIFO_Dequeue (FIFO_Buf_t* queue , DataType* item);
+             ^~~~~~~~~~~~
+gcc -o FIFO_buffer.exe FIFO.o main.o 
+Info: Nothing to build for FIFO_buffer
+17:12:40 **** Incremental Build of configuration Debug for project FIFO_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:30:32: warning: passing argument 2 of 'FIFO_Dequeue' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (FIFO_Dequeue(&FIFO_UART  ,&temp) == FIFO_No_Error)
+                                ^
+In file included from ..\main.c:8:0:
+..\FIFO.h:46:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ FIFO_status FIFO_Dequeue (FIFO_Buf_t* queue , DataType* item);
+             ^~~~~~~~~~~~
+..\main.c:31:45: error: invalid type argument of unary '*' (have 'int')
+     printf("Fifo dequeue %x -------Done \n",*temp);
+                                             ^~~~~
+..\main.c:32:32: warning: passing argument 2 of 'FIFO_Dequeue' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (FIFO_Dequeue(&FIFO_UART  ,&temp) == FIFO_No_Error)
+                                ^
+In file included from ..\main.c:8:0:
+..\FIFO.h:46:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ FIFO_status FIFO_Dequeue (FIFO_Buf_t* queue , DataType* item);
+             ^~~~~~~~~~~~
+..\main.c:33:46: error: invalid type argument of unary '*' (have 'int')
+      printf("Fifo dequeue %x -------Done \n",*temp);
+                                              ^~~~~
+17:12:56 **** Incremental Build of configuration Debug for project FIFO_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:30:32: warning: passing argument 2 of 'FIFO_Dequeue' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (FIFO_Dequeue(&FIFO_UART  ,&temp) == FIFO_No_Error)
+                                ^
+In file included from ..\main.c:8:0:
+..\FIFO.h:46:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ FIFO_status FIFO_Dequeue (FIFO_Buf_t* queue , DataType* item);
+             ^~~~~~~~~~~~
+..\main.c:32:32: warning: passing argument 2 of 'FIFO_Dequeue' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (FIFO_Dequeue(&FIFO_UART  ,&temp) == FIFO_No_Error)
+                                ^
+In file included from ..\main.c:8:0:
+..\FIFO.h:46:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ FIFO_status FIFO_Dequeue (FIFO_Buf_t* queue , DataType* item);
+             ^~~~~~~~~~~~
+gcc -o FIFO_buffer.exe FIFO.o main.o 
+Info: Nothing to build for FIFO_buffer
+17:15:11 **** Incremental Build of configuration Debug for project FIFO_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:30:32: warning: passing argument 2 of 'FIFO_Dequeue' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (FIFO_Dequeue(&FIFO_UART  ,&temp) == FIFO_No_Error)
+                                ^
+In file included from ..\main.c:8:0:
+..\FIFO.h:46:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ FIFO_status FIFO_Dequeue (FIFO_Buf_t* queue , DataType* item);
+             ^~~~~~~~~~~~
+..\main.c:32:32: warning: passing argument 2 of 'FIFO_Dequeue' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (FIFO_Dequeue(&FIFO_UART  ,&temp) == FIFO_No_Error)
+                                ^
+In file included from ..\main.c:8:0:
+..\FIFO.h:46:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ FIFO_status FIFO_Dequeue (FIFO_Buf_t* queue , DataType* item);
+             ^~~~~~~~~~~~
+gcc -o FIFO_buffer.exe FIFO.o main.o 
+Info: Nothing to build for FIFO_buffer
+17:17:10 **** Incremental Build of configuration Debug for project FIFO_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o FIFO.o "..\\FIFO.c" 
+gcc -o FIFO_buffer.exe FIFO.o main.o 
+17:17:15 **** Incremental Build of configuration Debug for project FIFO_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:30:32: warning: passing argument 2 of 'FIFO_Dequeue' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (FIFO_Dequeue(&FIFO_UART  ,&temp) == FIFO_No_Error)
+                                ^
+In file included from ..\main.c:8:0:
+..\FIFO.h:46:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ FIFO_status FIFO_Dequeue (FIFO_Buf_t* queue , DataType* item);
+             ^~~~~~~~~~~~
+..\main.c:32:32: warning: passing argument 2 of 'FIFO_Dequeue' from incompatible pointer type [-Wincompatible-pointer-types]
+  if (FIFO_Dequeue(&FIFO_UART  ,&temp) == FIFO_No_Error)
+                                ^
+In file included from ..\main.c:8:0:
+..\FIFO.h:46:13: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'int *'
+ FIFO_status FIFO_Dequeue (FIFO_Buf_t* queue , DataType* item);
+             ^~~~~~~~~~~~
+gcc -o FIFO_buffer.exe FIFO.o main.o 
+17:17:28 **** Incremental Build of configuration Debug for project FIFO_buffer ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o FIFO.o "..\\FIFO.c" 
+gcc -o FIFO_buffer.exe FIFO.o main.o 
+Info: Nothing to build for FIFO_buffer
+11:07:36 **** Rebuild of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:175:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+..\main.c: In function 'main':
+..\main.c:198:3: warning: implicit declaration of function 'DDPRINTF' [-Wimplicit-function-declaration]
+   DDPRINTF("\n =============================");
+   ^~~~~~~~
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+main.o: In function `main':
+D:\Omar\My-GitHub\Embedded-Systems-Online-Diploma\System Architect\Student_DataBase_LinkedList Project\Debug/../main.c:198: undefined reference to `DDPRINTF'
+D:\Omar\My-GitHub\Embedded-Systems-Online-Diploma\System Architect\Student_DataBase_LinkedList Project\Debug/../main.c:199: undefined reference to `DDPRINTF'
+D:\Omar\My-GitHub\Embedded-Systems-Online-Diploma\System Architect\Student_DataBase_LinkedList Project\Debug/../main.c:200: undefined reference to `DDPRINTF'
+D:\Omar\My-GitHub\Embedded-Systems-Online-Diploma\System Architect\Student_DataBase_LinkedList Project\Debug/../main.c:201: undefined reference to `DDPRINTF'
+D:\Omar\My-GitHub\Embedded-Systems-Online-Diploma\System Architect\Student_DataBase_LinkedList Project\Debug/../main.c:202: undefined reference to `DDPRINTF'
+main.o:D:\Omar\My-GitHub\Embedded-Systems-Online-Diploma\System Architect\Student_DataBase_LinkedList Project\Debug/../main.c:203: more undefined references to `DDPRINTF' follow
+collect2.exe: error: ld returned 1 exit status
+11:08:20 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+main.o: In function `main':
+D:\Omar\My-GitHub\Embedded-Systems-Online-Diploma\System Architect\Student_DataBase_LinkedList Project\Debug/../main.c:198: undefined reference to `DDPRINTF'
+D:\Omar\My-GitHub\Embedded-Systems-Online-Diploma\System Architect\Student_DataBase_LinkedList Project\Debug/../main.c:199: undefined reference to `DDPRINTF'
+D:\Omar\My-GitHub\Embedded-Systems-Online-Diploma\System Architect\Student_DataBase_LinkedList Project\Debug/../main.c:200: undefined reference to `DDPRINTF'
+D:\Omar\My-GitHub\Embedded-Systems-Online-Diploma\System Architect\Student_DataBase_LinkedList Project\Debug/../main.c:201: undefined reference to `DDPRINTF'
+D:\Omar\My-GitHub\Embedded-Systems-Online-Diploma\System Architect\Student_DataBase_LinkedList Project\Debug/../main.c:202: undefined reference to `DDPRINTF'
+main.o:D:\Omar\My-GitHub\Embedded-Systems-Online-Diploma\System Architect\Student_DataBase_LinkedList Project\Debug/../main.c:203: more undefined references to `DDPRINTF' follow
+collect2.exe: error: ld returned 1 exit status
+11:08:31 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'DeleteAll':
+..\main.c:175:6: warning: unused variable 'count' [-Wunused-variable]
+  int count = 0;
+      ^~~~~
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+11:08:45 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+Info: Nothing to build for Student_DataBase_LinkedList Project
+15:05:24 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'GetNth':
+..\main.c:203:33: error: invalid initializer
+  struct SStudent pCurrentNode = gpFirstStudent;
+                                 ^~~~~~~~~~~~~~
+..\main.c:204:8: error: used struct type value where scalar is required
+  while(pCurrentNode)
+        ^~~~~~~~~~~~
+..\main.c:209:43: error: invalid type argument of '->' (have 'struct SStudent')
+    DPRINTF("\n \t ID :  %d  ",pCurrentNode->student.ID);
+                                           ^
+..\main.c:15:10: note: in definition of macro 'DPRINTF'
+   printf(__VA_ARGS__); \
+          ^~~~~~~~~~~
+..\main.c:210:43: error: invalid type argument of '->' (have 'struct SStudent')
+    DPRINTF("\n \t Name  %s  ",pCurrentNode->student.name);
+                                           ^
+..\main.c:15:10: note: in definition of macro 'DPRINTF'
+   printf(__VA_ARGS__); \
+          ^~~~~~~~~~~
+..\main.c:211:43: error: invalid type argument of '->' (have 'struct SStudent')
+    DPRINTF("\n \t height  %f",pCurrentNode->student.height);
+                                           ^
+..\main.c:15:10: note: in definition of macro 'DPRINTF'
+   printf(__VA_ARGS__); \
+          ^~~~~~~~~~~
+..\main.c:217:31: error: invalid type argument of '->' (have 'struct SStudent')
+    pCurrentNode = pCurrentNode->PNextStudent;
+                               ^~
+..\main.c: In function 'main':
+..\main.c:259:3: error: expected ';' before 'default'
+   default:
+   ^~~~~~~
+15:05:39 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'GetNth':
+..\main.c:203:33: error: invalid initializer
+  struct SStudent pCurrentNode = gpFirstStudent;
+                                 ^~~~~~~~~~~~~~
+..\main.c:204:8: error: used struct type value where scalar is required
+  while(pCurrentNode)
+        ^~~~~~~~~~~~
+..\main.c:209:43: error: invalid type argument of '->' (have 'struct SStudent')
+    DPRINTF("\n \t ID :  %d  ",pCurrentNode->student.ID);
+                                           ^
+..\main.c:15:10: note: in definition of macro 'DPRINTF'
+   printf(__VA_ARGS__); \
+          ^~~~~~~~~~~
+..\main.c:210:43: error: invalid type argument of '->' (have 'struct SStudent')
+    DPRINTF("\n \t Name  %s  ",pCurrentNode->student.name);
+                                           ^
+..\main.c:15:10: note: in definition of macro 'DPRINTF'
+   printf(__VA_ARGS__); \
+          ^~~~~~~~~~~
+..\main.c:211:43: error: invalid type argument of '->' (have 'struct SStudent')
+    DPRINTF("\n \t height  %f",pCurrentNode->student.height);
+                                           ^
+..\main.c:15:10: note: in definition of macro 'DPRINTF'
+   printf(__VA_ARGS__); \
+          ^~~~~~~~~~~
+..\main.c:217:31: error: invalid type argument of '->' (have 'struct SStudent')
+    pCurrentNode = pCurrentNode->PNextStudent;
+                               ^~
+15:07:46 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+Info: Nothing to build for Student_DataBase_LinkedList Project
+15:09:11 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Student_DataBase_LinkedList Project.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:09:24 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Student_DataBase_LinkedList Project.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:09:35 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Student_DataBase_LinkedList Project.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:09:49 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Student_DataBase_LinkedList Project.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:10:15 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+Info: Nothing to build for Student_DataBase_LinkedList Project
+15:28:45 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file Student_DataBase_LinkedList Project.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:29:08 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+Info: Nothing to build for Student_DataBase_LinkedList Project
+15:31:47 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+15:40:03 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+15:40:52 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+Info: Nothing to build for Student_DataBase_LinkedList Project
+15:43:56 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+Info: Nothing to build for Student_DataBase_LinkedList Project
+15:45:49 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+Info: Nothing to build for Student_DataBase_LinkedList Project
+15:50:04 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+15:51:30 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Number_Of_Students_UsingRecursion':
+..\main.c:253:59: error: 'struct SStudent' has no member named 'PNextStuden'; did you mean 'PNextStudent'?
+  return 1 + Number_Of_Students_UsingRecursion(pCurrentNode->PNextStuden) ;
+                                                           ^~
+..\main.c:255:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+15:51:42 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+Info: Nothing to build for Student_DataBase_LinkedList Project
+15:52:57 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:293:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int (*)()' [-Wformat=]
+    DPRINTF("\n the number of students is %d",Number_Of_Students_UsingRecursion);
+            ^
+..\main.c:15:10: note: in definition of macro 'DPRINTF'
+   printf(__VA_ARGS__); \
+          ^~~~~~~~~~~
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+Info: Nothing to build for Student_DataBase_LinkedList Project
+15:53:17 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+Info: Nothing to build for Student_DataBase_LinkedList Project
+15:54:29 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+Info: Nothing to build for Student_DataBase_LinkedList Project
+15:59:00 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+Info: Nothing to build for Student_DataBase_LinkedList Project
+Info: Nothing to build for Student_DataBase_LinkedList Project
+22:34:55 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Reverse_List':
+..\main.c:259:19: error: expected ')' before '!' token
+  if(gpFirstStudent!)
+                   ^
+..\main.c: At top level:
+..\main.c:277:1: error: two or more data types in declaration specifiers
+ int main()
+ ^~~
+..\main.c:277:5: warning: return type of 'main' is not 'int' [-Wmain]
+ int main()
+     ^~~~
+..\main.c: In function 'main':
+..\main.c:321:9: warning: 'return' with a value, in function returning void
+  return 0;
+         ^
+..\main.c:277:5: note: declared here
+ int main()
+     ^~~~
+22:35:02 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'Reverse_List':
+..\main.c:259:19: error: expected ')' before '!' token
+  if(gpFirstStudent!)
+                   ^
+22:35:40 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+22:37:28 **** Incremental Build of configuration Debug for project Student_DataBase_LinkedList Project ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o "Student_DataBase_LinkedList Project.exe" main.o 
+Info: Nothing to build for Student_DataBase_LinkedList Project

@@ -1,0 +1,25 @@
+/*
+ * LIFO.h
+ *
+ *  Created on: Aug 5, 2023
+ *      Author: OmArHerp
+ */
+
+#ifndef LIFO_H_
+#define LIFO_H_
+
+
+/**************************************_DataType_Config***************************************/
+									/*choose the data type*/
+typedef DataType		unsigned int
+
+//Type Definitions
+typedef struct LIFO_buffer {
+	DataType length;
+	DataType int count;
+	DataType
+
+};
+
+
+#endif /* LIFO_H_ */

@@ -1,0 +1,101 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 6, 2023
+ *      Author: OmArHerp
+ */
+
+#include "stdio.h"
+#include "stdlib.h"
+#include "string.h"
+#include "conio.h"
+
+
+//Essential Data
+struct Sdata
+{
+	int ID;
+	char name[40];
+	float height;
+};
+
+//Linked List Node
+struct SStudent
+{
+	struct Sdata student;
+	struct SStudent* PNextStudent;
+};
+
+//Create a Head Pointer
+struct SStudent* gpFirstStudent = NULL;
+
+
+void AddStudent()
+{
+	struct SStudent* pNewStudent;
+	struct SStudent* pLastStudent;
+	char temp_text[40];
+	//If list is Empty
+	if(gpFirstStudent == NULL)
+	{
+		//create a new node
+		pNewStudent =(struct SStudent* ) malloc (sizeof(struct SStudent));
+		//Assign it to the Head Pointer
+		gpFirstStudent = pNewStudent;
+
+	}
+	//If Not
+	else
+	{
+		//Navigate though the list till the last node
+		pLastStudent = gpFirstStudent;
+		while(pLastStudent->PNextStudent != NULL)
+		{
+			pLastStudent = pLastStudent->PNextStudent;
+		}
+
+		//create a new node
+		pNewStudent =(struct SStudent* ) malloc (sizeof(struct SStudent));
+		pLastStudent->PNextStudent = pNewStudent;
+	}
+
+	//Check if Nodes were created successfully
+	if(pNewStudent == NULL)
+	{
+		printf("Profile creating failed ------ returning back \n");
+		return;
+	}
+
+	//Fill the Profile
+	printf("\n Enter the ID: ");
+	gets(temp_next);
+	pNewStudent->student.ID = atoi(temp_next);
+
+	printf("\n Enter student full name :  ");
+	gets(pNewStudent->student.name);
+
+
+	printf("\n Enter the height : ");
+	gets(temp_next);
+	pNewStudent->student.height = atof(temp_next);
+
+	//Set the next_pointer (new_student) to NULL
+	pNewStudent->PNextStudent = NULL;
+
+
+
+
+}
+
+
+int main()
+{
+
+
+
+
+
+
+	return 0;
+}
+

@@ -1,0 +1,23 @@
+/*
+ * LIFO.c
+ *
+ *  Created on: Aug 5, 2023
+ *      Author: OmArHerp
+ */
+
+LIFO_Init(LIFO_Buf_t* stack, DataType* buf, unsigned int length)
+{
+	stack->base = buf;
+	stack->head = buf;
+	stack->
+
+}
+LIFO_Push(LIFO_Buf_t* stack, DataType item)
+{
+
+}
+LIFO_Pop (LIFO_Buf_t* stack, DataType* item)
+{
+
+}
+

@@ -1,0 +1,28 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 6, 2023
+ *      Author: OmArHerp
+ */
+
+#include "stdio.h"
+#include "stdlib.h"
+#include "string.h"
+#include "conio.h"
+
+
+//Essential Data
+struct Sdata
+{
+	int ID;
+	char name[40];
+	float height;
+};
+
+//Linked List Node
+struct SStudent
+{
+	struct Sdata student;
+	struct SStudent* PNextStudent;
+};
+

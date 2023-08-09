@@ -1,0 +1,85 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 6, 2023
+ *      Author: OmArHerp
+ */
+
+#include "stdio.h"
+#include "stdlib.h"
+#include "string.h"
+#include "conio.h"
+
+
+//Essential Data
+struct Sdata
+{
+	int ID;
+	char name[40];
+	float height;
+};
+
+//Linked List Node
+struct SStudent
+{
+	struct Sdata student;
+	struct SStudent* PNextStudent;
+};
+
+//Create a Head Pointer
+struct SStudent* gpFirstStudent = NULL;
+
+
+void AddStudent()
+{
+	struct SStudent* pNewStudent;
+	struct SStudent* pLastStudent;
+	//If list is Empty
+	if(gpFirstStudent == NULL)
+	{
+		//create a new node
+		pNewStudent =(struct SStudent* ) malloc (sizeof(struct SStudent));
+		//Assign it to the Head Pointer
+		gpFirstStudent = pNewStudent;
+
+	}
+	//If Not
+	else
+	{
+		//Navigate though the list till the last node
+		pLastStudent = gpFirstStudent;
+		while(pLastStudent->PNextStudent != NULL)
+		{
+			pLastStudent = pLastStudent->PNextStudent;
+		}
+
+		//create a new node
+		pNewStudent =(struct SStudent* ) malloc (sizeof(struct SStudent));
+		pNewStudent->PNextStudent = NULL;
+
+		pLastStudent->PNextStudent = pNewStudent;
+	}
+
+	//Check if Nodes were created successfully
+	if(pNewStudent == NULL)
+	{
+		printf("Profile creating failed ------ returning back");
+		return;
+	}
+
+
+
+}
+
+
+int main()
+{
+
+
+
+
+
+
+	return 0;
+}
+

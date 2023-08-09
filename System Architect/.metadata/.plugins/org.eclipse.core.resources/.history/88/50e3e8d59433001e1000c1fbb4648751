@@ -1,0 +1,21 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 5, 2023
+ *      Author: OmArHerp
+ */
+
+#include "fifo.h"
+
+int main()
+{
+	FIFO_Buf_t FIFO_UART;
+	if(FIFO_Init(&FIFO_UART  , , 5) == FIFO)
+
+
+
+	return 0;
+
+}
+
+

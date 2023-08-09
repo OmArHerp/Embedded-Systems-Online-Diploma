@@ -1,0 +1,323 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 6, 2023
+ *      Author: OmArHerp
+ */
+
+#include "stdio.h"
+#include "stdlib.h"
+#include "string.h"
+#include "conio.h"
+
+#define DPRINTF(...)		{fflush(stdout); \
+		fflush(stdin); \
+		printf(__VA_ARGS__); \
+		fflush(stdout); \
+		fflush(stdin);}
+
+
+//Essential Data
+struct Sdata
+{
+	int ID;
+	char name[40];
+	float height;
+};
+
+//Linked List Node
+struct SStudent
+{
+	struct Sdata student;
+	struct SStudent* PNextStudent;
+};
+
+//Create a Head Pointer
+struct SStudent* gpFirstStudent = NULL;
+
+
+void AddStudent()
+{
+	struct SStudent* pNewStudent;
+	struct SStudent* pLastStudent;
+	char temp_text[40];
+	//If list is Empty
+	if(gpFirstStudent == NULL)
+	{
+		//create a new node
+		pNewStudent =(struct SStudent* ) malloc (sizeof(struct SStudent));
+		//Assign it to the Head Pointer
+		gpFirstStudent = pNewStudent;
+
+	}
+	//If Not
+	else
+	{
+		//Navigate though the list till the last node
+		pLastStudent = gpFirstStudent;
+		while(pLastStudent->PNextStudent != NULL)
+		{
+			pLastStudent = pLastStudent->PNextStudent;
+		}
+
+		//create a new node
+		pNewStudent =(struct SStudent* ) malloc (sizeof(struct SStudent));
+		pLastStudent->PNextStudent = pNewStudent;
+	}
+
+	//Check if Nodes were created successfully
+	if(pNewStudent == NULL)
+	{
+		DPRINTF("Profile creating failed ------ returning back \n");
+		return;
+	}
+
+	//Fill the Profile
+	DPRINTF("\n Enter the ID: ");
+	gets(temp_text);
+	pNewStudent->student.ID = atoi(temp_text);
+
+	DPRINTF("\n Enter student full name :  ");
+	gets(pNewStudent->student.name);
+
+
+	DPRINTF("\n Enter the height : ");
+	gets(temp_text);
+	pNewStudent->student.height = atof(temp_text);
+
+	//Set the next_pointer (new_student) to NULL
+	pNewStudent->PNextStudent = NULL;
+
+}
+
+void delete_student()
+{
+	char temp_text[40];
+	unsigned int selected_id;
+	//get the selected ID
+	DPRINTF("\nEnter the selected ID to be deleted : ");
+	gets(temp_text);
+	selected_id = atoi(temp_text);
+
+	//if list is not empty
+	if(gpFirstStudent)
+	{
+		struct SStudent* pSelectedStudent = gpFirstStudent;
+		struct SStudent* pPreviousStudent = gpFirstStudent;
+
+		//ID detected on first
+		if(pSelectedStudent->student.ID == selected_id && pPreviousStudent->student.ID == selected_id)
+		{
+			gpFirstStudent = pSelectedStudent->PNextStudent;
+			free(pSelectedStudent);
+			return;
+		}
+		else //ID Detected elsewhere
+		{
+			//Loop on all nodes
+			while(pSelectedStudent)
+			{
+				//selected_student is ahead of previous_student
+				pSelectedStudent = pSelectedStudent->PNextStudent ;
+
+				if(pSelectedStudent->student.ID == selected_id )
+				{
+					//If It was the last element
+					if(pSelectedStudent->PNextStudent == NULL)
+					{
+						pPreviousStudent->PNextStudent = NULL;
+						free(pSelectedStudent);
+						return;
+					}
+					else
+					{
+						pPreviousStudent->PNextStudent = pSelectedStudent->PNextStudent;
+						free(pSelectedStudent);
+						return;
+					}
+				}
+
+				pPreviousStudent = pPreviousStudent->PNextStudent;
+			}
+
+		}
+	}
+	DPRINTF("\n cannot find student ID.");
+	return;
+}
+
+void view_students()
+{
+	struct SStudent* pCurrentStudent = gpFirstStudent;
+	int count = 0;
+	if(gpFirstStudent == NULL)
+	{
+		DPRINTF("\n Empty List");
+	}
+	else
+	{
+		while(pCurrentStudent)
+		{
+			DPRINTF("\n Profile number %d : ",count+1);
+			DPRINTF("\n \t ID :  %d  ",pCurrentStudent->student.ID);
+			DPRINTF("\n \t Name  %s  ",pCurrentStudent->student.name);
+			DPRINTF("\n \t height  %f",pCurrentStudent->student.height);
+			pCurrentStudent = pCurrentStudent->PNextStudent ;
+			count++;
+		}
+
+	}
+}
+
+void DeleteAll()
+{
+	struct SStudent* pCurrentStudent = gpFirstStudent;
+	if(gpFirstStudent == NULL)
+	{
+		DPRINTF("\n Empty List");
+	}
+	else
+	{
+		while(pCurrentStudent)
+		{
+			struct SStudent* pTempStudent=pCurrentStudent ;
+			pCurrentStudent = pCurrentStudent->PNextStudent ;
+			free(pTempStudent) ;
+		}
+		gpFirstStudent = NULL ;
+	}
+}
+
+void GetNth()
+{
+	char temp_text[40];
+	unsigned int Nth_Node;
+	unsigned int count = 0;
+	//get the Nth Node
+	DPRINTF("\nEnter the Student Index you want : ");
+	gets(temp_text);
+	Nth_Node = atoi(temp_text);
+
+
+	//Loop on the nodes
+	struct SStudent* pCurrentNode = gpFirstStudent;
+	while(pCurrentNode)
+	{
+		//check the current node
+		if(count == Nth_Node)
+		{
+			DPRINTF("\n \t ID :  %d  ",pCurrentNode->student.ID);
+			DPRINTF("\n \t Name  %s  ",pCurrentNode->student.name);
+			DPRINTF("\n \t height  %f",pCurrentNode->student.height);
+			return ;
+		}
+		else
+		{
+			//Go to the next Node
+			pCurrentNode = pCurrentNode->PNextStudent;
+			count++;
+		}
+	}
+
+	//If Node wasn't found
+	DPRINTF("\n Node Index Doesn't exist. ");
+	return;
+}
+
+/*Iteration Method*/
+
+void Number_Of_Students()
+{
+	unsigned int count = 0;
+	struct SStudent* pCurrentNode = gpFirstStudent;
+
+	//Loop Nodes & counts
+	while(pCurrentNode)
+	{
+		count++;
+		pCurrentNode = pCurrentNode->PNextStudent;
+	}
+
+	DPRINTF("The number of students is %d",count);
+	return;
+}
+
+/*Recursive  Method*/
+int Number_Of_Students_UsingRecursion(struct SStudent* head)
+{
+
+	//Implementation
+	if(head == NULL)
+		return 0;
+
+	return 1 + Number_Of_Students_UsingRecursion(head->PNextStudent) ;
+
+}
+
+void Reverse_List()
+{
+	if(gpFirstStudent!)
+		return;
+	struct SStudent* Prev = NULL;
+	struct SStudent* Next = NULL;
+
+
+	while(gpFirstStudent)
+	{
+		Next = gpFirstStudent->PNextStudent;
+		gpFirstStudent->PNextStudent = Prev;
+		Prev = gpFirstStudent;
+		gpFirstStudent = Next;
+
+	}
+	gpFirstStudent = Prev;
+	return;
+}
+void
+int main()
+{
+	char temp_next[40];
+
+	while(1)
+	{
+		DPRINTF("\n =============================");
+		DPRINTF("\n\t Choose one of the following Options \n");
+		DPRINTF("\n 1: AddStudent   ");
+		DPRINTF("\n 2: Delete_Student   ");
+		DPRINTF("\n 3: View Students   ");
+		DPRINTF("\n 4: Delete All   ");
+		DPRINTF("\n 5: StudentIndex(starts from 0)   ");
+		DPRINTF("\n 6: ShowTheNumberOfStudents  ");
+
+		gets(temp_next);
+		DPRINTF("\n =============================");
+		switch( atoi (temp_next))
+		{
+		case 1:
+			AddStudent();
+			break;
+		case 2:
+			delete_student();
+			break;
+		case 3:
+			view_students();
+			break;
+		case 4:
+			DeleteAll();
+			break;
+		case 5:
+			GetNth();
+			break;
+		case 6:
+			//Number_Of_Students();
+			DPRINTF("\n the number of students is %d",Number_Of_Students_UsingRecursion(gpFirstStudent));
+			break;
+		default:
+			DPRINTF("\n Wrong Option");
+			break;
+		}
+	}
+
+	return 0;
+}
+

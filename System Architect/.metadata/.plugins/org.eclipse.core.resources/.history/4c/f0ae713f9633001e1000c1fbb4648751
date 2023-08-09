@@ -1,0 +1,23 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 5, 2023
+ *      Author: OmArHerp
+ */
+
+#include "FIFO.h"
+
+DataType uart_buffer[5];
+int main()
+{
+
+	FIFO_Buf_t FIFO_UART;
+	if(FIFO_Init(&FIFO_UART  , uart_buffer , 5) == FIFO_No_Error)
+
+
+
+	return 0;
+
+}
+
+
