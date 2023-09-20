@@ -15,8 +15,13 @@
 
 
 
-### - Second Term   ![](https://progress-bar.dev/0/?title=Soon)
+### - Second Term   ![](https://progress-bar.dev/10/)
 
+- Unit 6: MCU Architecture ![](https://progress-bar.dev/70/)
+- Unit 7: MCU Essential Peripherals  ![](https://progress-bar.dev/0/)
+- Unit 8: MCU Interfacing ![](https://progress-bar.dev/0/)
+- Unit 9: MCU Timers/ADC  ![](https://progress-bar.dev/0/)
+- Unit 10: SW Engineering  ![](https://progress-bar.dev/0/)
 
 
 
