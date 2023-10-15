@@ -1,0 +1,19 @@
+/*
+ * Stm32_F103C6_gpio_driver.c
+ *
+ *  Created on: Oct 13, 2023
+ *      Author: Herp
+ */
+
+/**===========================================================
+ * @Fn				-MCAL_GPIO_Init
+ * @brief 			-Initializes the GPIOx PINy according to the specified paramters in the PinConfig
+ * @param [in]		-
+ * @param [out]		-
+ * @retval			-
+ * Note				-
+ */
+void MCAL_GPIO_Init(GPIO_TypeDef *GPIOx, GPIO_PinConfig_t *PinConfig)
+{
+
+}

@@ -1,0 +1,19 @@
+/*
+ * Stm32_F103C6_gpio_driver.c
+ *
+ *  Created on: Oct 13, 2023
+ *      Author: Herp
+ */
+
+/**===========================================================
+ * @Fn				-
+ * @brief 			-
+ * @param [in]		-
+ * @param [out]		-
+ * @retval			-
+ * Note				-
+ */
+void MCAL_GPIO_Init(GPIO_TypeDef *GPIOx, GPIO_PinConfig_t *PinConfig)
+{
+
+}

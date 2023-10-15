@@ -1,0 +1,19 @@
+/*
+ * Stm32f103x6.h
+ *
+ *  Created on: Oct 13, 2023
+ *      Author: Dell
+ */
+
+#ifndef INC_STM32F103X6_H_
+#define INC_STM32F103X6_H_
+
+/************************************_Includes************************************/
+
+#include "stdlib.h"
+#include <stdint.h>
+
+/************************************_Base_Addresses_For_Memories************************************/
+
+
+#endif /* INC_STM32F103X6_H_ */

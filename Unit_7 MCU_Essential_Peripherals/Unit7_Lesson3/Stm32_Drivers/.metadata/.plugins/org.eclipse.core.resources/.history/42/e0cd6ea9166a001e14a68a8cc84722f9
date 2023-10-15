@@ -1,0 +1,30 @@
+/*
+ * Stm32_F103C6_gpio_driver.h
+ *
+ *  Created on: Oct 13, 2023
+ *      Author: Herp
+ */
+
+#ifndef STM32_F103C6_GPIO_DRIVER_H_
+#define STM32_F103C6_GPIO_DRIVER_H_
+
+/************************************_Includes************************************/
+#include "Stm32f103x6.h"
+
+//=======================================================================================================
+//=======================================================================================================
+
+//Config Structure
+typedef struct
+{
+	uint16_t GPIO_PinNumber ; // Specifies the GPIO pins to be configured
+			  // This parameter can be a value of @ref GPIO_PINS_define
+
+}GPIO_PinConfig_t;
+
+//================================
+//Macros Configuration References
+//================================
+
+
+#endif /* STM32_F103C6_GPIO_DRIVER_H_ */

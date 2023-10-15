@@ -1,0 +1,452 @@
+14:30:46 **** Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc "../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.d" -MT"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Stm32_Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+14:33:36 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+14:38:28 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.d" -MT"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Stm32_Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+16:43:15 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Stm32_Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+ 
+Finished building: Drivers.list
+ 
+00:01:11 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+00:04:34 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+02:11:09 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.d" -MT"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Stm32_Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+ 
+Finished building: Drivers.list
+ 
+02:16:57 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Stm32_GPIO" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.d" -MT"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Stm32_GPIO" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Stm32_GPIO" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Stm32_GPIO" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Stm32_Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+02:56:42 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Stm32_GPIO" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.d" -MT"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Stm32_GPIO" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c: In function 'MCAL_GPIO_ReadPin':
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c:58:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c: In function 'MCAL_GPIO_ReadPort':
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c: In function 'MCAL_GPIO_LockPin':
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c:138:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Stm32_Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+12:40:46 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Stm32_GPIO" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.d" -MT"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o"
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c: In function 'MCAL_GPIO_Init':
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c:84:21: warning: variable 'configregister' set but not used [-Wunused-but-set-variable]
+  volatile uint32_t* configregister = NULL ;
+                     ^~~~~~~~~~~~~~
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c: In function 'MCAL_GPIO_ReadPin':
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c:121:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c: In function 'MCAL_GPIO_ReadPort':
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c:136:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c: In function 'MCAL_GPIO_LockPin':
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c:201:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Stm32_Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+ 
+Finished building: Drivers.list
+ 
+13:02:35 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Stm32_GPIO" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.d" -MT"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o"
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c: In function 'MCAL_GPIO_ReadPin':
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c:133:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c: In function 'MCAL_GPIO_ReadPort':
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c:148:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c: In function 'MCAL_GPIO_LockPin':
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c:213:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Stm32_Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.bin
+ 
+ 
+Finished building: Drivers.list
+ 
+15:30:44 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Stm32_GPIO" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.d" -MT"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o"
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c: In function 'MCAL_GPIO_ReadPin':
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c:167:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c: In function 'MCAL_GPIO_ReadPort':
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c:182:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c: In function 'MCAL_GPIO_LockPin':
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c:247:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Stm32_Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+ 
+Finished building: Drivers.list
+ 
+15:47:48 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Stm32_GPIO" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.d" -MT"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o"
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c: In function 'MCAL_GPIO_ReadPin':
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c:205:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c: In function 'MCAL_GPIO_ReadPort':
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c:220:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c: In function 'MCAL_GPIO_LockPin':
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c:285:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Stm32_Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+15:57:22 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Stm32_GPIO" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.d" -MT"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o"
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c: In function 'MCAL_GPIO_ReadPort':
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c:229:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c: In function 'MCAL_GPIO_LockPin':
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c:294:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Stm32_Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+16:02:59 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Stm32_GPIO" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.d" -MT"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o"
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c: In function 'MCAL_GPIO_LockPin':
+../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c:297:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Stm32_Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+16:53:37 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Stm32_GPIO" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.d" -MT"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Stm32_Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+19:02:27 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Stm32_GPIO" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.d" -MT"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Stm32_GPIO" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:60:2: error: 'RCC_CFGR' undeclared (first use in this function); did you mean 'RCC_BASE'?
+  RCC_CFGR |= (0b0000 << 4); // -> NO Prescaler
+  ^~~~~~~~
+  RCC_BASE
+../Src/main.c:60:2: note: each undeclared identifier is reported only once for each function it appears in
+../Src/main.c:71:2: error: 'RCC_CR' undeclared (first use in this function); did you mean 'RCC_CFGR'?
+  RCC_CR |= (1 << 0) ; // -> HSI ON
+  ^~~~~~
+  RCC_CFGR
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+19:03:27 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Stm32_GPIO" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Stm32_Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1320	      8	   1568	   2896	    b50	Drivers.elf
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.bin
+Finished building: Drivers.list
+ 
+ 
+20:01:48 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-size   Drivers.elf 
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+   text	   data	    bss	    dec	    hex	filename
+   1320	      8	   1568	   2896	    b50	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+ 
+ 
+15:00:37 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Stm32_GPIO" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.d" -MT"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Stm32_GPIO" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Stm32_Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1320	      8	   1568	   2896	    b50	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.bin
+Finished building: Drivers.hex
+ 
+ 
+ 
+Finished building: Drivers.list
+ 
+15:45:08 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Stm32_GPIO" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.d" -MT"Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Stm32_F103C6_Drivers/Stm32_GPIO/Stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Stm32_Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1320	      8	   1568	   2896	    b50	Drivers.elf
+Finished building: default.size.stdout
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+Finished building: Drivers.list
+ 
+ 
+15:45:13 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1320	      8	   1568	   2896	    b50	Drivers.elf
+Finished building: default.size.stdout
+ 
+15:52:11 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Stm32_GPIO" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers/Inc" -I"D:/Omar/Embedded System/K_S/Stm32_Drivers/Drivers/Stm32_F103C6_Drivers" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Drivers.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Stm32_Drivers\Drivers\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Drivers.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Drivers.elf
+ 
+arm-none-eabi-objdump -h -S  Drivers.elf  > "Drivers.list"
+arm-none-eabi-objcopy  -O ihex  Drivers.elf  "Drivers.hex"
+arm-none-eabi-objcopy  -O binary  Drivers.elf  "Drivers.bin"
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1320	      8	   1568	   2896	    b50	Drivers.elf
+Finished building: Drivers.list
+Finished building: default.size.stdout
+ 
+Finished building: Drivers.hex
+Finished building: Drivers.bin
+ 
+ 
+ 
+15:52:39 **** Incremental Build of configuration Debug for project Drivers ****
+make -j12 all 
+arm-none-eabi-size   Drivers.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1320	      8	   1568	   2896	    b50	Drivers.elf
+Finished building: default.size.stdout
+ 
