@@ -1,0 +1,61 @@
+/*
+ * DC.c
+ *
+ *  Created on: Nov 20, 2023
+ *      Author: Herp
+ */
+
+#include "DC.h"
+//variables
+int DC_speed = 0;
+
+
+int DC_Get_distance_random(int l, int r, int count);
+//STATE Pointer to function
+void (*DC_state)();
+
+
+void DC_init ()
+{
+	//init PWM
+	printf("DC_init \n");
+}
+
+void DC_motor(int S)
+{
+	DC_speed = S;
+	DC_state = STATE(DC_busy);
+	printf("CA ------speed=%d--------> DC ",DC_speed);
+
+}
+
+STATE_define(DC_idle)
+{
+	//state_Name
+	DC_state_id = DC_idle;
+
+	//state_Action
+	//CALL PWM to make speed = DC_speed
+	printf("DC_idle State: Speed=%d \n",DC_distance , DC_speed);
+
+	//Event_Check
+	//DC_Get_distance
+	DC_distance = DC_Get_distance_random(45, 55 , 1) ;
+	(DC_distance <= DC_threshold) ? (DC_state = STATE(DC_waiting)) : (DC_state = STATE(DC_driving)) ;
+}
+
+STATE_define(DC_busy)
+{
+	//state_Name
+	DC_state_id = DC_driving;
+
+	//state_Action
+	//DC_Motor
+	DC_speed = 30;
+
+	//Event_Check
+	//DC_Get_distance
+	DC_distance = DC_Get_distance_random(45, 55 , 1) ;
+	(DC_distance <= DC_threshold) ? (DC_state = STATE(DC_waiting)) : (DC_state = STATE(DC_driving)) ;
+	printf("DC_Waiting State: distance =%d Speed=%d \n",DC_distance , DC_speed);
+}

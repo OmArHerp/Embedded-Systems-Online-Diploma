@@ -1,0 +1,15 @@
+/*
+ * CA.c
+ *
+ *  Created on: Nov 20, 2023
+ *      Author: Herp
+ */
+
+//variables
+int CA_speed = 0;
+int CA_distance = 0;
+int CA_threshold = 50;
+
+
+//STATE Pointer to function
+	CA_state

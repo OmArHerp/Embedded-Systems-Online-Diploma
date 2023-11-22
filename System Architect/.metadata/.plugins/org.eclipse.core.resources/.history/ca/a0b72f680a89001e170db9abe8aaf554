@@ -1,0 +1,60 @@
+/*
+ * DC.c
+ *
+ *  Created on: Nov 20, 2023
+ *      Author: Herp
+ */
+
+#include "DC.h"
+//variables
+int DC_speed = 0;
+
+
+int DC_Get_distance_random(int l, int r, int count);
+//STATE Pointer to function
+void (*DC_state)();
+
+
+STATE_define(DC_waiting)
+{
+	//state_Name
+	DC_state_id = DC_waiting;
+
+	//state_Action
+	//DC_Motor
+	DC_speed = 0;
+
+	//Event_Check
+	//DC_Get_distance
+	DC_distance = DC_Get_distance_random(45, 55 , 1) ;
+	(DC_distance <= DC_threshold) ? (DC_state = STATE(DC_waiting)) : (DC_state = STATE(DC_driving)) ;
+	printf("DC_Waiting State: distance =%d Speed=%d \n",DC_distance , DC_speed);
+}
+
+STATE_define(DC_driving)
+{
+	//state_Name
+	DC_state_id = DC_driving;
+
+	//state_Action
+	//DC_Motor
+	DC_speed = 30;
+
+	//Event_Check
+	//DC_Get_distance
+	DC_distance = DC_Get_distance_random(45, 55 , 1) ;
+	(DC_distance <= DC_threshold) ? (DC_state = STATE(DC_waiting)) : (DC_state = STATE(DC_driving)) ;
+	printf("DC_Waiting State: distance =%d Speed=%d \n",DC_distance , DC_speed);
+}
+
+int DC_Get_distance_random(int l, int r, int count)
+{
+	//Generates random number from range l ~ r
+	int i;
+	for(i=0; i < count ; i++)
+	{
+		int rand_num = (rand() % (r -1 + 1)) + 1;
+		return rand_num;
+	}
+
+}

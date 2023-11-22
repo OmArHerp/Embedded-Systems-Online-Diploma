@@ -1,0 +1,22 @@
+/*
+ * main.c
+ *
+ *  Created on: Nov 20, 2023
+ *      Author: Herp
+ */
+
+#include "CA.h"
+
+void setup()
+{
+	//init all the drivers
+	//init IRQ....
+	//init HAl US_Driver DC_Driver
+	//Init Block
+	//Set States pointers for each Block
+}
+
+void main()
+{
+	setup();
+}
