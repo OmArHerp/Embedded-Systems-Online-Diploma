@@ -1,0 +1,31 @@
+/*
+ * Stm32_F103C6_gpio_driver.c
+ *
+ *  Created on: Oct 13, 2023
+ *      Author: Herp
+ */
+
+
+#include "Stm32_F103C6_EXTI_driver.h"
+
+/**===========================================================
+ * @Fn				-MCAL_GPIO_Init
+ * @brief 			-Initializes the GPIOx PINy according to the specified paramters in the PinConfig
+ * @param [in]		-GPIOx: where x can be (A..F depending on device used) to select the GPIO peripheral
+ * @param [in]		-PinConfig: pointer to a GPIO_PinConfig_t structure that contains
+ * 					 the configuration information for the specified GPIO PIN.
+ * @retval			-none
+ * Note				-Stm32F103C6 MCU has GPIO A,B,C,D,E,F Modules
+ * 					But LQFP48 Package has only GPIO A,B,PART of C/D exported as external PINS from the MCU
+ * 					E,F DOESN'T EXIST IN THIS PACKAGE!
+ */
+
+/**===========================================================
+ * @Fn				-MCAL_GPIO_LockPin
+ * @brief 			-The locking mechanism allows the IO configuration to be frozen
+ * @param [in]		-GPIOx: where x can be (A..F depending on device used) to select the GPIO peripheral
+ * @param [in]		-PinNumber: which pin to be locked
+ * @retval			-ok if pin config is locked OR Error if pin is not locked (Ok & Error are defined @ref GPIO_RETURN_LOCK)
+ * Note				-none
+ */
+

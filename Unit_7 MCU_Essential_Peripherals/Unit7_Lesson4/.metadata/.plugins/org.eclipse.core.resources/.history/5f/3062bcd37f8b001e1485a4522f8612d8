@@ -1,0 +1,56 @@
+/*
+ * Stm32_F103C6_EXTI_driver.h
+ *
+ *  Created on: November 25, 2023
+ *      Author: Herp
+ */
+
+#ifndef STM32_F103C6_EXTI_DRIVER_H_
+#define STM32_F103C6_EXTI_DRIVER_H_
+
+/************************************_Includes_************************************/
+#include "Stm32f103x6.h"
+#include "Stm32_F103C6_gpio_driver.h"
+
+/************************************_Variables_************************************/
+typedef struct
+{
+	uint16_t 		EXTI_InputLineNumber ;
+	GPIO_TypeDef * 	GPIO_Port  ;
+	uint16_t 		GPIO_PIN ;
+	uint8_t			IVT_IRQ_Number ;
+
+} EXTI_GPIO_Maping_t;
+
+typedef struct
+{
+	EXTI_GPIO_Maping_t * EXTI_PIN  ; //Specifies the External interrupt GPIO mapping
+									// This parameter must be set based on @ref EXTI_define
+
+} EXTI_PinConfig_t;
+
+/************************************_REF_MACROS_************************************/
+//@ref EXTI_define
+//EXTI0
+#define EXTI0PA0		(EXTI_GPIO_Maping_t){EXTI0, GPIOA, GPIO_PIN_0, EXTI0_IRQ }
+#define EXTI0PB0		(EXTI_GPIO_Maping_t){EXTI0, GPIOB, GPIO_PIN_0, EXTI0_IRQ }
+#define EXTI0PC0		(EXTI_GPIO_Maping_t){EXTI0, GPIOC, GPIO_PIN_0, EXTI0_IRQ }
+#define EXTI0PD0		(EXTI_GPIO_Maping_t){EXTI0, GPIOD, GPIO_PIN_0, EXTI0_IRQ }
+
+
+//=======================================================================================================
+//=======================================================================================================
+
+//================================
+//Macros Configuration References
+//================================
+
+
+/*
+ *======================================================================================
+ * 								APIs Supported by "MCAL EXTI DRIVER"
+ *======================================================================================
+ */
+
+
+#endif /* STM32_F103C6_EXTI_DRIVER_H_ */

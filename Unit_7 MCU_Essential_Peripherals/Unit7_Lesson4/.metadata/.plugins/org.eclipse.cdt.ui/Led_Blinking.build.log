@@ -1,0 +1,10 @@
+17:24:36 **** Incremental Build of configuration Debug for project Led_Blinking ****
+make -j12 all 
+arm-none-eabi-size   Led_Blinking.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2208	      8	   1568	   3784	    ec8	Led_Blinking.elf
+Finished building: default.size.stdout
+ 
+
+17:24:36 Build Finished. 0 errors, 0 warnings. (took 252ms)
+

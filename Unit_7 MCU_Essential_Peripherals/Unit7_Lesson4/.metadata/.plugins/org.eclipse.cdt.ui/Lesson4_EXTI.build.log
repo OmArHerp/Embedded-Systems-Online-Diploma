@@ -1,0 +1,20 @@
+11:17:23 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3596	      8	   1632	   5236	   1474	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+ 
+Finished building: Lesson4_EXTI.list
+ 
+
+11:17:25 Build Finished. 0 errors, 0 warnings. (took 1s.356ms)
+

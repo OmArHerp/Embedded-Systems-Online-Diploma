@@ -1,0 +1,1799 @@
+16:34:14 **** Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-size   Lesson4_EXTI.elf 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+Finished building: Lesson4_EXTI.list
+ 
+ 
+16:36:20 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+Finished building: Lesson4_EXTI.list
+ 
+ 
+16:39:15 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+Finished building: Lesson4_EXTI.list
+ 
+ 
+16:47:51 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `main':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/main.c:29: undefined reference to `Keypad_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Lesson4_EXTI.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+16:49:09 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+Finished building: Lesson4_EXTI.list
+ 
+ 
+16:49:18 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:31:2: error: expected ';' before 'while'
+  while(1)
+  ^~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+16:49:20 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `main':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/main.c:29: undefined reference to `Keypad_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Lesson4_EXTI.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+17:06:42 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/keypad.d" -MT"Src/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/keypad.o: In function `Keypad_init':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:29: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:34: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:39: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:44: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:49: undefined reference to `MCAL_GPIO_Init'
+Src/keypad.o:D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:54: more undefined references to `MCAL_GPIO_Init' follow
+Src/keypad.o: In function `Keypad_init':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:65: undefined reference to `MCAL_GPIO_WritePort'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Lesson4_EXTI.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+17:08:52 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/keypad.o: In function `Keypad_init':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:29: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:34: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:39: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:44: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:49: undefined reference to `MCAL_GPIO_Init'
+Src/keypad.o:D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:54: more undefined references to `MCAL_GPIO_Init' follow
+Src/keypad.o: In function `Keypad_init':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:65: undefined reference to `MCAL_GPIO_WritePort'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Lesson4_EXTI.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+17:09:14 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/keypad.d" -MT"Src/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/keypad.o: In function `Keypad_init':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:29: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:34: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:39: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:44: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:49: undefined reference to `MCAL_GPIO_Init'
+Src/keypad.o:D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:54: more undefined references to `MCAL_GPIO_Init' follow
+Src/keypad.o: In function `Keypad_init':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:65: undefined reference to `MCAL_GPIO_WritePort'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Lesson4_EXTI.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+17:10:51 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL" -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/keypad.d" -MT"Src/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL" -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL" -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL" -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/keypad.o: In function `Keypad_init':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:29: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:34: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:39: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:44: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:49: undefined reference to `MCAL_GPIO_Init'
+Src/keypad.o:D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:54: more undefined references to `MCAL_GPIO_Init' follow
+Src/keypad.o: In function `Keypad_init':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:65: undefined reference to `MCAL_GPIO_WritePort'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Lesson4_EXTI.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+17:15:14 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL" -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/keypad.d" -MT"Src/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/keypad.o: In function `Keypad_init':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:31: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:36: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:41: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:46: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:51: undefined reference to `MCAL_GPIO_Init'
+Src/keypad.o:D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:56: more undefined references to `MCAL_GPIO_Init' follow
+Src/keypad.o: In function `Keypad_init':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:67: undefined reference to `MCAL_GPIO_WritePort'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Lesson4_EXTI.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+17:15:43 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/keypad.o: In function `Keypad_init':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:31: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:36: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:41: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:46: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:51: undefined reference to `MCAL_GPIO_Init'
+Src/keypad.o:D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:56: more undefined references to `MCAL_GPIO_Init' follow
+Src/keypad.o: In function `Keypad_init':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:67: undefined reference to `MCAL_GPIO_WritePort'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Lesson4_EXTI.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+17:16:13 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL" -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/keypad.d" -MT"Src/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/keypad.o: In function `Keypad_init':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:30: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:35: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:40: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:45: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:50: undefined reference to `MCAL_GPIO_Init'
+Src/keypad.o:D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:55: more undefined references to `MCAL_GPIO_Init' follow
+Src/keypad.o: In function `Keypad_init':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:66: undefined reference to `MCAL_GPIO_WritePort'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Lesson4_EXTI.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+17:16:55 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/keypad.o: In function `Keypad_init':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:30: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:35: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:40: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:45: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:50: undefined reference to `MCAL_GPIO_Init'
+Src/keypad.o:D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:55: more undefined references to `MCAL_GPIO_Init' follow
+Src/keypad.o: In function `Keypad_init':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:66: undefined reference to `MCAL_GPIO_WritePort'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Lesson4_EXTI.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+17:16:59 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/keypad.o: In function `Keypad_init':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:30: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:35: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:40: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:45: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:50: undefined reference to `MCAL_GPIO_Init'
+Src/keypad.o:D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:55: more undefined references to `MCAL_GPIO_Init' follow
+Src/keypad.o: In function `Keypad_init':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:66: undefined reference to `MCAL_GPIO_WritePort'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Lesson4_EXTI.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+17:17:19 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL" -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c:24:10: fatal error: Stm32f103x6.h.h: No such file or directory
+ #include "Stm32f103x6.h.h"
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:29: Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+17:18:19 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 -mcpu=cortex-m3 -g3 -c -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc -gdwarf-2 "../Src/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/keypad.d" -MT"Src/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+../Src/main.c:24:10: fatal error: Stm32f103x6.h.h: No such file or directory
+ #include "Stm32f103x6.h.h"
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:29: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+17:18:37 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/keypad.o: In function `Keypad_init':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:30: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:35: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:40: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:45: undefined reference to `MCAL_GPIO_Init'
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:50: undefined reference to `MCAL_GPIO_Init'
+Src/keypad.o:D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:55: more undefined references to `MCAL_GPIO_Init' follow
+Src/keypad.o: In function `Keypad_init':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/keypad.c:66: undefined reference to `MCAL_GPIO_WritePort'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Lesson4_EXTI.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+17:18:54 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Src/main.o: In function `main':
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/Debug/../Src/main.c:29: undefined reference to `Keypad_init'
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:49: Lesson4_EXTI.elf] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+17:19:03 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+Finished building: Lesson4_EXTI.list
+ 
+ 
+17:23:09 **** Clean-only build of configuration Debug for project Led_Blinking ****
+make -j12 clean 
+rm -rf *
+ 
+17:23:10 **** Build of configuration Debug for project Led_Blinking ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Blinking/Led_Blinking/HAL/inc" -I"D:/Omar/Embedded System/K_S/Blinking/Led_Blinking/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Blinking/Led_Blinking/HAL/inc" -I"D:/Omar/Embedded System/K_S/Blinking/Led_Blinking/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Blinking/Led_Blinking/HAL/inc" -I"D:/Omar/Embedded System/K_S/Blinking/Led_Blinking/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Blinking/Led_Blinking/HAL/inc" -I"D:/Omar/Embedded System/K_S/Blinking/Led_Blinking/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_gpio_driver.d" -MT"MCAL/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/LED.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Blinking/Led_Blinking/HAL/inc" -I"D:/Omar/Embedded System/K_S/Blinking/Led_Blinking/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/LED.d" -MT"HAL/LED.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/LED.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Blinking/Led_Blinking/HAL/inc" -I"D:/Omar/Embedded System/K_S/Blinking/Led_Blinking/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+../Src/main.c: In function 'main':
+../Src/main.c:59:19: warning: pointer targets in passing argument 1 of 'LCD_WRITE_STRING' differ in signedness [-Wpointer-sign]
+  LCD_WRITE_STRING("Hey You");
+                   ^~~~~~~~~
+In file included from ../Src/main.c:26:0:
+D:/Omar/Embedded System/K_S/Blinking/Led_Blinking/HAL/inc/lcd.h:78:6: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ void LCD_WRITE_STRING(uint8_t* data);
+      ^~~~~~~~~~~~~~~~
+../Src/main.c:64:10: warning: unused variable 'count' [-Wunused-variable]
+  uint8_t count =0;
+          ^~~~~
+../Src/main.c:63:10: warning: unused variable 'pressed_key' [-Wunused-variable]
+  uint8_t pressed_key;
+          ^~~~~~~~~~~
+../HAL/lcd.c: In function 'LCD_KICK':
+../HAL/lcd.c:17:2: warning: implicit declaration of function 'wait_ms'; did you mean 'wcstombs'? [-Wimplicit-function-declaration]
+  wait_ms(5);
+  ^~~~~~~
+  wcstombs
+arm-none-eabi-gcc -gdwarf-2 -o "Led_Blinking.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Blinking\Led_Blinking\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Led_Blinking.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Led_Blinking.elf
+ 
+arm-none-eabi-size   Led_Blinking.elf 
+arm-none-eabi-objdump -h -S  Led_Blinking.elf  > "Led_Blinking.list"
+arm-none-eabi-objcopy  -O binary  Led_Blinking.elf  "Led_Blinking.bin"
+   text	   data	    bss	    dec	    hex	filename
+   2208	      8	   1568	   3784	    ec8	Led_Blinking.elf
+Finished building: default.size.stdout
+ 
+Finished building: Led_Blinking.bin
+Finished building: Led_Blinking.list
+ 
+ 
+17:23:11 **** Clean-only build of configuration Debug for project Lesson4_EXTI ****
+make -j12 clean 
+rm -rf *
+ 
+17:23:11 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c6tx.d" -MT"Startup/startup_stm32f103c6tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c6tx.o" "../Startup/startup_stm32f103c6tx.s"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_gpio_driver.d" -MT"MCAL/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+../HAL/lcd.c: In function 'LCD_GPIO_init':
+../HAL/lcd.c:35:26: error: 'GPIO_PIN_0' undeclared (first use in this function); did you mean 'GPIO_PIN10'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_0;
+                          ^~~~~~~~~~
+                          GPIO_PIN10
+../HAL/lcd.c:35:26: note: each undeclared identifier is reported only once for each function it appears in
+../HAL/lcd.c:40:26: error: 'GPIO_PIN_1' undeclared (first use in this function); did you mean 'GPIO_PIN_0'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_1;
+                          ^~~~~~~~~~
+                          GPIO_PIN_0
+../HAL/lcd.c:45:26: error: 'GPIO_PIN_2' undeclared (first use in this function); did you mean 'GPIO_PIN_1'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_2;
+                          ^~~~~~~~~~
+                          GPIO_PIN_1
+../HAL/lcd.c:50:26: error: 'GPIO_PIN_3' undeclared (first use in this function); did you mean 'GPIO_PIN_2'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_3;
+                          ^~~~~~~~~~
+                          GPIO_PIN_2
+../HAL/lcd.c:55:26: error: 'GPIO_PIN_4' undeclared (first use in this function); did you mean 'GPIO_PIN_3'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_4;
+                          ^~~~~~~~~~
+                          GPIO_PIN_3
+../HAL/lcd.c:60:26: error: 'GPIO_PIN_5' undeclared (first use in this function); did you mean 'GPIO_PIN_4'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_5;
+                          ^~~~~~~~~~
+                          GPIO_PIN_4
+../HAL/lcd.c:65:26: error: 'GPIO_PIN_6' undeclared (first use in this function); did you mean 'GPIO_PIN_5'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_6;
+                          ^~~~~~~~~~
+                          GPIO_PIN_5
+../HAL/lcd.c:70:26: error: 'GPIO_PIN_7' undeclared (first use in this function); did you mean 'GPIO_PIN_6'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_7;
+                          ^~~~~~~~~~
+                          GPIO_PIN_6
+../HAL/lcd.c: In function 'LCD_check_lcd_isbusy':
+../HAL/lcd.c:123:26: error: 'GPIO_PIN_0' undeclared (first use in this function); did you mean 'GPIO_PIN10'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_0;
+                          ^~~~~~~~~~
+                          GPIO_PIN10
+../HAL/lcd.c:127:26: error: 'GPIO_PIN_1' undeclared (first use in this function); did you mean 'GPIO_PIN_0'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_1;
+                          ^~~~~~~~~~
+                          GPIO_PIN_0
+../HAL/lcd.c:131:26: error: 'GPIO_PIN_2' undeclared (first use in this function); did you mean 'GPIO_PIN_1'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_2;
+                          ^~~~~~~~~~
+                          GPIO_PIN_1
+../HAL/lcd.c:135:26: error: 'GPIO_PIN_3' undeclared (first use in this function); did you mean 'GPIO_PIN_2'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_3;
+                          ^~~~~~~~~~
+                          GPIO_PIN_2
+../HAL/lcd.c:139:26: error: 'GPIO_PIN_4' undeclared (first use in this function); did you mean 'GPIO_PIN_3'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_4;
+                          ^~~~~~~~~~
+                          GPIO_PIN_3
+../HAL/lcd.c:143:26: error: 'GPIO_PIN_5' undeclared (first use in this function); did you mean 'GPIO_PIN_4'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_5;
+                          ^~~~~~~~~~
+                          GPIO_PIN_4
+../HAL/lcd.c:147:26: error: 'GPIO_PIN_6' undeclared (first use in this function); did you mean 'GPIO_PIN_5'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_6;
+                          ^~~~~~~~~~
+                          GPIO_PIN_5
+../HAL/lcd.c:151:26: error: 'GPIO_PIN_7' undeclared (first use in this function); did you mean 'GPIO_PIN_6'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_7;
+                          ^~~~~~~~~~
+                          GPIO_PIN_6
+make: *** [HAL/subdir.mk:23: HAL/lcd.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+17:23:43 **** Incremental Build of configuration Debug for project Led_Blinking ****
+make -j12 all 
+arm-none-eabi-size   Led_Blinking.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2208	      8	   1568	   3784	    ec8	Led_Blinking.elf
+Finished building: default.size.stdout
+ 
+17:23:43 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+../HAL/lcd.c: In function 'LCD_GPIO_init':
+../HAL/lcd.c:35:26: error: 'GPIO_PIN_0' undeclared (first use in this function); did you mean 'GPIO_PIN10'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_0;
+                          ^~~~~~~~~~
+                          GPIO_PIN10
+../HAL/lcd.c:35:26: note: each undeclared identifier is reported only once for each function it appears in
+../HAL/lcd.c:40:26: error: 'GPIO_PIN_1' undeclared (first use in this function); did you mean 'GPIO_PIN_0'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_1;
+                          ^~~~~~~~~~
+                          GPIO_PIN_0
+../HAL/lcd.c:45:26: error: 'GPIO_PIN_2' undeclared (first use in this function); did you mean 'GPIO_PIN_1'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_2;
+                          ^~~~~~~~~~
+                          GPIO_PIN_1
+../HAL/lcd.c:50:26: error: 'GPIO_PIN_3' undeclared (first use in this function); did you mean 'GPIO_PIN_2'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_3;
+                          ^~~~~~~~~~
+                          GPIO_PIN_2
+../HAL/lcd.c:55:26: error: 'GPIO_PIN_4' undeclared (first use in this function); did you mean 'GPIO_PIN_3'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_4;
+                          ^~~~~~~~~~
+                          GPIO_PIN_3
+../HAL/lcd.c:60:26: error: 'GPIO_PIN_5' undeclared (first use in this function); did you mean 'GPIO_PIN_4'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_5;
+                          ^~~~~~~~~~
+                          GPIO_PIN_4
+../HAL/lcd.c:65:26: error: 'GPIO_PIN_6' undeclared (first use in this function); did you mean 'GPIO_PIN_5'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_6;
+                          ^~~~~~~~~~
+                          GPIO_PIN_5
+../HAL/lcd.c:70:26: error: 'GPIO_PIN_7' undeclared (first use in this function); did you mean 'GPIO_PIN_6'?
+  PinCfg.GPIO_PinNumber = GPIO_PIN_7;
+                          ^~~~~~~~~~
+                          GPIO_PIN_6
+make: *** [HAL/subdir.mk:23: HAL/lcd.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+17:24:09 **** Incremental Build of configuration Debug for project Led_Blinking ****
+make -j12 all 
+arm-none-eabi-size   Led_Blinking.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2208	      8	   1568	   3784	    ec8	Led_Blinking.elf
+Finished building: default.size.stdout
+ 
+17:24:10 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-size   Lesson4_EXTI.elf 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+   text	   data	    bss	    dec	    hex	filename
+    556	      8	   1568	   2132	    854	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+Finished building: Lesson4_EXTI.list
+ 
+ 
+17:24:36 **** Incremental Build of configuration Debug for project Led_Blinking ****
+make -j12 all 
+arm-none-eabi-size   Led_Blinking.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2208	      8	   1568	   3784	    ec8	Led_Blinking.elf
+Finished building: default.size.stdout
+ 
+17:24:36 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1244	      8	   1568	   2820	    b04	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+Finished building: Lesson4_EXTI.list
+ 
+ 
+17:25:01 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1244	      8	   1568	   2820	    b04	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+03:31:53 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_gpio_driver.d" -MT"MCAL/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1244	      8	   1568	   2820	    b04	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+Finished building: Lesson4_EXTI.list
+ 
+ 
+03:32:11 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1244	      8	   1568	   2820	    b04	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+Finished building: Lesson4_EXTI.list
+ 
+ 
+03:39:49 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_gpio_driver.d" -MT"MCAL/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_gpio_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:20:11: error: duplicate member 'EXTI_InputLineNumber'
+  uint16_t EXTI_InputLineNumber ;
+           ^~~~~~~~~~~~~~~~~~~~
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+03:42:12 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+In file included from ../Src/main.c:27:0:
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc/Stm32_F103C6_EXTI_driver.h:20:11: error: duplicate member 'EXTI_InputLineNumber'
+  uint16_t EXTI_InputLineNumber ;
+           ^~~~~~~~~~~~~~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+03:43:14 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1244	      8	   1568	   2820	    b04	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+ 
+Finished building: Lesson4_EXTI.list
+ 
+04:06:19 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1244	      8	   1568	   2820	    b04	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+Finished building: Lesson4_EXTI.list
+ 
+ 
+13:14:09 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_gpio_driver.d" -MT"MCAL/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+../Src/main.c: In function 'main':
+../Src/main.c:31:20: error: incompatible types when assigning to type 'EXTI_GPIO_Maping_t * {aka struct <anonymous> *}' from type 'EXTI_GPIO_Maping_t {aka struct <anonymous>}'
+  EXTI_CFG.EXTI_PIN = EXTI9PB9;
+                    ^
+../Src/main.c:30:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+13:15:06 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../Src/main.c: In function 'main':
+../Src/main.c:31:20: error: incompatible types when assigning to type 'EXTI_GPIO_Maping_t * {aka struct <anonymous> *}' from type 'EXTI_GPIO_Maping_t {aka struct <anonymous>}'
+  EXTI_CFG.EXTI_PIN = EXTI9PB9;
+                    ^
+../Src/main.c:30:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+13:19:18 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../Src/main.c: In function 'main':
+../Src/main.c:31:20: error: incompatible types when assigning to type 'EXTI_GPIO_Maping_t * {aka struct <anonymous> *}' from type 'EXTI_GPIO_Maping_t {aka struct <anonymous>}'
+  EXTI_CFG.EXTI_PIN = EXTI9PB9;
+                    ^
+../Src/main.c:30:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+13:20:13 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:31:10: error: invalid type argument of '->' (have 'EXTI_PinConfig_t {aka struct <anonymous>}')
+  EXTI_CFG->EXTI_PIN = EXTI9PB9;
+          ^~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+13:20:23 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:31:20: error: incompatible types when assigning to type 'EXTI_GPIO_Maping_t * {aka struct <anonymous> *}' from type 'EXTI_GPIO_Maping_t {aka struct <anonymous>}'
+  EXTI_CFG.EXTI_PIN = EXTI9PB9;
+                    ^
+../Src/main.c:30:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+13:21:08 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../Src/main.c: In function 'main':
+../Src/main.c:30:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+Finished building: Lesson4_EXTI.list
+ 
+ 
+14:23:58 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:39:26: error: unknown type name 'EXTI_PinConfig_t'
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:28: error: unknown type name 'EXTI_PinConfig_t'
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+../Src/main.c: In function 'main':
+../Src/main.c:30:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+14:31:34 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+Finished building: Lesson4_EXTI.list
+ 
+ 
+14:31:39 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+14:47:28 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_gpio_driver.d" -MT"MCAL/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+../Src/main.c: In function 'main':
+../Src/main.c:30:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+Finished building: Lesson4_EXTI.list
+ 
+ 
+14:52:42 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_gpio_driver.d" -MT"MCAL/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+../Src/main.c: In function 'main':
+../Src/main.c:30:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+Finished building: Lesson4_EXTI.list
+ 
+ 
+04:45:49 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_gpio_driver.d" -MT"MCAL/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+../Src/main.c: In function 'main':
+../Src/main.c:30:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:24:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:55:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:74:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+04:46:48 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:24:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:55:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:74:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+04:47:20 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:24:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:55:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:74:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+04:47:39 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:24:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:55:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:74:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+04:47:54 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:24:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:55:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:74:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+04:53:34 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:24:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:57:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t * EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+04:53:38 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:24:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:57:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:07:59 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_gpio_driver.d" -MT"MCAL/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+../Src/main.c: In function 'main':
+../Src/main.c:30:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:24:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:57:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:09:02 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:24:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:57:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:32:55 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:34:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:95:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:32:57 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:34:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:95:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:33:30 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../Src/main.c: In function 'main':
+../Src/main.c:30:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:34:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:95:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:33:58 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:34:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:95:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:35:16 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../Src/main.c: In function 'main':
+../Src/main.c:30:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:34:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:95:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:36:46 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:33:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:75:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:94:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:36:51 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:34:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:95:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:37:08 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:34:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:95:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:37:15 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:35:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:77:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:96:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:37:20 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:34:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:95:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:38:00 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../Src/main.c: In function 'main':
+../Src/main.c:30:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:34:18: error: unknown type name 'EXTI_GPIO_Maping_t'
+ void Update_EXTI(EXTI_GPIO_Maping_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:95:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:38:35 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../Src/main.c: In function 'main':
+../Src/main.c:30:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:34:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:95:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:38:39 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:34:18: error: unknown type name 'EXTI_GPIO_Maping_t'
+ void Update_EXTI(EXTI_GPIO_Maping_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:95:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:38:49 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../Src/main.c: In function 'main':
+../Src/main.c:30:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:34:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:95:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:38:52 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:34:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:95:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:39:21 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_gpio_driver.d" -MT"MCAL/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+../Src/main.c: In function 'main':
+../Src/main.c:30:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:34:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:95:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:40:52 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc -gdwarf-2 "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_gpio_driver.d" -MT"MCAL/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+../Src/main.c: In function 'main':
+../Src/main.c:30:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:34:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:8: error: unknown type name 'EXTI_PinConfig_t'
+ static EXTI_PinConfig_t  EXTI_Config;
+        ^~~~~~~~~~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:77:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:96:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:26: warning: 'EXTI_Config' defined but not used [-Wunused-variable]
+ static EXTI_PinConfig_t  EXTI_Config;
+                          ^~~~~~~~~~~
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:41:20 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:34:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:95:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:43:02 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../Src/main.c: In function 'main':
+../Src/main.c:30:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:34:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:95:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:44:30 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../Src/main.c: In function 'main':
+../Src/main.c:30:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:35:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:77:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:96:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+05:44:47 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:34:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:95:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+06:03:49 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:19:2: error: unknown type name 'EXTI_GPIO_Maping_t'
+  EXTI_GPIO_Maping_t  EXTI_PIN  ;    //Specifies the External interrupt GPIO mapping .
+  ^~~~~~~~~~~~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c: In function 'Update_EXTI':
+../MCAL/Stm32_F103C6_EXTI_driver.c:54:37: error: 'EXTI_PinConfig_t {aka struct <anonymous>}' has no member named 'EXTI_Config'
+  PinCfg.GPIO_PinNumber = EXTI_Config->EXTI_Config->EXTI_PIN.GPIO_PIN ;
+                                     ^~
+../MCAL/Stm32_F103C6_EXTI_driver.c:56:2: warning: implicit declaration of function 'MCAL_EXTI_GPIO_Init'; did you mean 'MCAL_GPIO_Init'? [-Wimplicit-function-declaration]
+  MCAL_EXTI_GPIO_Init(EXTI_Config->EXTI_PIN.GPIO_Port, &PinCfg);
+  ^~~~~~~~~~~~~~~~~~~
+  MCAL_GPIO_Init
+../MCAL/Stm32_F103C6_EXTI_driver.c:56:43: error: request for member 'GPIO_Port' in something not a structure or union
+  MCAL_EXTI_GPIO_Init(EXTI_Config->EXTI_PIN.GPIO_Port, &PinCfg);
+                                           ^
+../MCAL/Stm32_F103C6_EXTI_driver.c:61:51: error: request for member 'EXTI_InputLineNumber' in something not a structure or union
+  uint8_t AFIO_EXTICR_index = EXTI_Config->EXTI_PIN.EXTI_InputLineNumber / 4 ;
+                                                   ^
+../MCAL/Stm32_F103C6_EXTI_driver.c:63:55: error: request for member 'EXTI_InputLineNumber' in something not a structure or union
+  uint8_t AFIO_EXTICR_Position = (EXTI_Config->EXTI_PIN.EXTI_InputLineNumber % 4) * 4 ;
+                                                       ^
+../MCAL/Stm32_F103C6_EXTI_driver.c:68:83: error: request for member 'GPIO_Port' in something not a structure or union
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_MAPPING(EXTI_Config->EXTI_PIN.GPIO_Port) & 0xF) << AFIO_EXTICR_Position ) ;
+                                                                                   ^
+../MCAL/Stm32_F103C6_EXTI_driver.c:39:38: note: in definition of macro 'AFIO_GPIO_EXTI_MAPPING'
+ #define AFIO_GPIO_EXTI_MAPPING(x) ( (x==GPIOA)?0:\
+                                      ^
+../MCAL/Stm32_F103C6_EXTI_driver.c:68:83: error: request for member 'GPIO_Port' in something not a structure or union
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_MAPPING(EXTI_Config->EXTI_PIN.GPIO_Port) & 0xF) << AFIO_EXTICR_Position ) ;
+                                                                                   ^
+../MCAL/Stm32_F103C6_EXTI_driver.c:40:12: note: in definition of macro 'AFIO_GPIO_EXTI_MAPPING'
+           (x==GPIOB)?1:\
+            ^
+../MCAL/Stm32_F103C6_EXTI_driver.c:68:83: error: request for member 'GPIO_Port' in something not a structure or union
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_MAPPING(EXTI_Config->EXTI_PIN.GPIO_Port) & 0xF) << AFIO_EXTICR_Position ) ;
+                                                                                   ^
+../MCAL/Stm32_F103C6_EXTI_driver.c:41:12: note: in definition of macro 'AFIO_GPIO_EXTI_MAPPING'
+           (x==GPIOC)?2:\
+            ^
+../MCAL/Stm32_F103C6_EXTI_driver.c:68:83: error: request for member 'GPIO_Port' in something not a structure or union
+  AFIO->EXTICR[AFIO_EXTICR_index] |= ((AFIO_GPIO_EXTI_MAPPING(EXTI_Config->EXTI_PIN.GPIO_Port) & 0xF) << AFIO_EXTICR_Position ) ;
+                                                                                   ^
+../MCAL/Stm32_F103C6_EXTI_driver.c:42:12: note: in definition of macro 'AFIO_GPIO_EXTI_MAPPING'
+           (x==GPIOD)?3:0 )
+            ^
+../MCAL/Stm32_F103C6_EXTI_driver.c: At top level:
+../MCAL/Stm32_F103C6_EXTI_driver.c:91:6: warning: conflicting types for 'MCAL_EXTI_GPIO_Init'
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+      ^~~~~~~~~~~~~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:56:2: note: previous implicit declaration of 'MCAL_EXTI_GPIO_Init' was here
+  MCAL_EXTI_GPIO_Init(EXTI_Config->EXTI_PIN.GPIO_Port, &PinCfg);
+  ^~~~~~~~~~~~~~~~~~~
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+06:04:39 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:34:18: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+                  GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:76:26: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+                          GPIO_PinConfig_t
+../MCAL/Stm32_F103C6_EXTI_driver.c:95:28: error: unknown type name 'EXTI_PinConfig_t'; did you mean 'GPIO_PinConfig_t'?
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+                            GPIO_PinConfig_t
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+06:07:03 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:33:18: error: unknown type name 'EXTI_PinConfig_t'
+ void Update_EXTI(EXTI_PinConfig_t* EXTI_Config)
+                  ^~~~~~~~~~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:75:26: error: unknown type name 'EXTI_PinConfig_t'
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config)
+                          ^~~~~~~~~~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:94:28: error: unknown type name 'EXTI_PinConfig_t'
+ void MCAL_EXTI_GPIO_Update(EXTI_PinConfig_t* EXTI_Config)
+                            ^~~~~~~~~~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c: In function 'MCAL_EXTI_GPIO_DeInit':
+../MCAL/Stm32_F103C6_EXTI_driver.c:111:2: error: 'EXTI' undeclared (first use in this function)
+  EXTI->IMR = 0x00000000;
+  ^~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:111:2: note: each undeclared identifier is reported only once for each function it appears in
+../MCAL/Stm32_F103C6_EXTI_driver.c:119:2: error: 'NVIC_IRQ6_EXTI0_Disable' undeclared (first use in this function)
+  NVIC_IRQ6_EXTI0_Disable  ;
+  ^~~~~~~~~~~~~~~~~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:120:2: error: 'NVIC_IRQ7_EXTI1_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ6_EXTI0_Disable'?
+  NVIC_IRQ7_EXTI1_Disable     ;
+  ^~~~~~~~~~~~~~~~~~~~~~~
+  NVIC_IRQ6_EXTI0_Disable
+../MCAL/Stm32_F103C6_EXTI_driver.c:121:2: error: 'NVIC_IRQ8_EXTI2_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ7_EXTI1_Disable'?
+  NVIC_IRQ8_EXTI2_Disable     ;
+  ^~~~~~~~~~~~~~~~~~~~~~~
+  NVIC_IRQ7_EXTI1_Disable
+../MCAL/Stm32_F103C6_EXTI_driver.c:122:2: error: 'NVIC_IRQ9_EXTI3_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ8_EXTI2_Disable'?
+  NVIC_IRQ9_EXTI3_Disable     ;
+  ^~~~~~~~~~~~~~~~~~~~~~~
+  NVIC_IRQ8_EXTI2_Disable
+../MCAL/Stm32_F103C6_EXTI_driver.c:123:2: error: 'NVIC_IRQ10_EXTI4_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ9_EXTI3_Disable'?
+  NVIC_IRQ10_EXTI4_Disable    ;
+  ^~~~~~~~~~~~~~~~~~~~~~~~
+  NVIC_IRQ9_EXTI3_Disable
+../MCAL/Stm32_F103C6_EXTI_driver.c:124:2: error: 'NVIC_IRQ23_EXTI5_9_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ10_EXTI4_Disable'?
+  NVIC_IRQ23_EXTI5_9_Disable  ;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+  NVIC_IRQ10_EXTI4_Disable
+../MCAL/Stm32_F103C6_EXTI_driver.c:125:2: error: 'NVIC_IRQ8_EXTI10_15_Disable' undeclared (first use in this function); did you mean 'NVIC_IRQ8_EXTI2_Disable'?
+  NVIC_IRQ8_EXTI10_15_Disable ;
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+  NVIC_IRQ8_EXTI2_Disable
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+06:09:45 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c: In function 'Update_EXTI':
+../MCAL/Stm32_F103C6_EXTI_driver.c:38:37: error: 'EXTI_PinConfig_t {aka struct <anonymous>}' has no member named 'EXTI_Config'
+  PinCfg.GPIO_PinNumber = EXTI_Config->EXTI_Config->EXTI_PIN.GPIO_PIN ;
+                                     ^~
+../MCAL/Stm32_F103C6_EXTI_driver.c:40:22: warning: passing argument 1 of 'MCAL_EXTI_GPIO_Init' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_EXTI_GPIO_Init(EXTI_Config->EXTI_PIN.GPIO_Port, &PinCfg);
+                      ^~~~~~~~~~~
+In file included from ../MCAL/Stm32_F103C6_EXTI_driver.c:12:0:
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc/Stm32_F103x6_EXTI_driver.h:202:6: note: expected 'EXTI_PinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_TypeDef * {aka struct <anonymous> *}'
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config);
+      ^~~~~~~~~~~~~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:40:2: error: too many arguments to function 'MCAL_EXTI_GPIO_Init'
+  MCAL_EXTI_GPIO_Init(EXTI_Config->EXTI_PIN.GPIO_Port, &PinCfg);
+  ^~~~~~~~~~~~~~~~~~~
+In file included from ../MCAL/Stm32_F103C6_EXTI_driver.c:12:0:
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc/Stm32_F103x6_EXTI_driver.h:202:6: note: declared here
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config);
+      ^~~~~~~~~~~~~~~~~~~
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+06:13:00 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c: In function 'Update_EXTI':
+../MCAL/Stm32_F103C6_EXTI_driver.c:40:22: warning: passing argument 1 of 'MCAL_EXTI_GPIO_Init' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_EXTI_GPIO_Init(EXTI_Config->EXTI_PIN.GPIO_Port , &PinCfg);
+                      ^~~~~~~~~~~
+In file included from ../MCAL/Stm32_F103C6_EXTI_driver.c:12:0:
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc/Stm32_F103x6_EXTI_driver.h:202:6: note: expected 'EXTI_PinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_TypeDef * {aka struct <anonymous> *}'
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config);
+      ^~~~~~~~~~~~~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:40:2: error: too many arguments to function 'MCAL_EXTI_GPIO_Init'
+  MCAL_EXTI_GPIO_Init(EXTI_Config->EXTI_PIN.GPIO_Port , &PinCfg);
+  ^~~~~~~~~~~~~~~~~~~
+In file included from ../MCAL/Stm32_F103C6_EXTI_driver.c:12:0:
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc/Stm32_F103x6_EXTI_driver.h:202:6: note: declared here
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config);
+      ^~~~~~~~~~~~~~~~~~~
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+06:13:34 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c: In function 'Update_EXTI':
+../MCAL/Stm32_F103C6_EXTI_driver.c:40:22: warning: passing argument 1 of 'MCAL_EXTI_GPIO_Init' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_EXTI_GPIO_Init(EXTI_Config->EXTI_PIN.GPIO_Port , &PinCfg);
+                      ^~~~~~~~~~~
+In file included from ../MCAL/Stm32_F103C6_EXTI_driver.c:12:0:
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc/Stm32_F103x6_EXTI_driver.h:202:6: note: expected 'EXTI_PinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_TypeDef * {aka struct <anonymous> *}'
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config);
+      ^~~~~~~~~~~~~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:40:2: error: too many arguments to function 'MCAL_EXTI_GPIO_Init'
+  MCAL_EXTI_GPIO_Init(EXTI_Config->EXTI_PIN.GPIO_Port , &PinCfg);
+  ^~~~~~~~~~~~~~~~~~~
+In file included from ../MCAL/Stm32_F103C6_EXTI_driver.c:12:0:
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc/Stm32_F103x6_EXTI_driver.h:202:6: note: declared here
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config);
+      ^~~~~~~~~~~~~~~~~~~
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+06:14:00 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c: In function 'Update_EXTI':
+../MCAL/Stm32_F103C6_EXTI_driver.c:40:43: error: invalid type argument of '->' (have 'EXTI_GPIO_Maping_t {aka struct <anonymous>}')
+  MCAL_EXTI_GPIO_Init(EXTI_Config->EXTI_PIN->GPIO_Port , &PinCfg);
+                                           ^~
+../MCAL/Stm32_F103C6_EXTI_driver.c:40:2: error: too many arguments to function 'MCAL_EXTI_GPIO_Init'
+  MCAL_EXTI_GPIO_Init(EXTI_Config->EXTI_PIN->GPIO_Port , &PinCfg);
+  ^~~~~~~~~~~~~~~~~~~
+In file included from ../MCAL/Stm32_F103C6_EXTI_driver.c:12:0:
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc/Stm32_F103x6_EXTI_driver.h:202:6: note: declared here
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config);
+      ^~~~~~~~~~~~~~~~~~~
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+06:14:04 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c: In function 'Update_EXTI':
+../MCAL/Stm32_F103C6_EXTI_driver.c:40:22: warning: passing argument 1 of 'MCAL_EXTI_GPIO_Init' from incompatible pointer type [-Wincompatible-pointer-types]
+  MCAL_EXTI_GPIO_Init(EXTI_Config->EXTI_PIN.GPIO_Port , &PinCfg);
+                      ^~~~~~~~~~~
+In file included from ../MCAL/Stm32_F103C6_EXTI_driver.c:12:0:
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc/Stm32_F103x6_EXTI_driver.h:202:6: note: expected 'EXTI_PinConfig_t * {aka struct <anonymous> *}' but argument is of type 'GPIO_TypeDef * {aka struct <anonymous> *}'
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config);
+      ^~~~~~~~~~~~~~~~~~~
+../MCAL/Stm32_F103C6_EXTI_driver.c:40:2: error: too many arguments to function 'MCAL_EXTI_GPIO_Init'
+  MCAL_EXTI_GPIO_Init(EXTI_Config->EXTI_PIN.GPIO_Port , &PinCfg);
+  ^~~~~~~~~~~~~~~~~~~
+In file included from ../MCAL/Stm32_F103C6_EXTI_driver.c:12:0:
+D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc/Stm32_F103x6_EXTI_driver.h:202:6: note: declared here
+ void MCAL_EXTI_GPIO_Init(EXTI_PinConfig_t* EXTI_Config);
+      ^~~~~~~~~~~~~~~~~~~
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+06:14:46 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+Finished building: Lesson4_EXTI.list
+ 
+ 
+06:15:36 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_gpio_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_gpio_driver.d" -MT"MCAL/Stm32_F103C6_gpio_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_gpio_driver.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/keypad.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/keypad.d" -MT"HAL/keypad.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/keypad.o"
+arm-none-eabi-gcc -gdwarf-2 "../HAL/lcd.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"HAL/lcd.d" -MT"HAL/lcd.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "HAL/lcd.o"
+../Src/main.c: In function 'main':
+../Src/main.c:30:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+Finished building: Lesson4_EXTI.list
+ 
+ 
+06:17:47 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../MCAL/Stm32_F103C6_EXTI_driver.c:12:10: fatal error: Stm32_F103C6_EXTI_driver.h: No such file or directory
+ #include "Stm32_F103C6_EXTI_driver.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [MCAL/subdir.mk:21: MCAL/Stm32_F103C6_EXTI_driver.o] Error 1
+make: *** Waiting for unfinished jobs....
+../Src/main.c:27:10: fatal error: Stm32_F103C6_EXTI_driver.h: No such file or directory
+ #include "Stm32_F103C6_EXTI_driver.h"
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+make: *** [Src/subdir.mk:24: Src/main.o] Error 1
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+06:18:10 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../Src/main.c: In function 'main':
+../Src/main.c:30:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+Finished building: Lesson4_EXTI.list
+ 
+ 
+06:57:31 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+../Src/main.c: In function 'main':
+../Src/main.c:30:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+    584	      8	   1568	   2160	    870	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+Finished building: Lesson4_EXTI.list
+ 
+ 
+07:22:59 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1128	      8	   1624	   2760	    ac8	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+ 
+Finished building: Lesson4_EXTI.list
+ 
+07:49:56 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../MCAL/Stm32_F103C6_EXTI_driver.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"MCAL/Stm32_F103C6_EXTI_driver.d" -MT"MCAL/Stm32_F103C6_EXTI_driver.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MCAL/Stm32_F103C6_EXTI_driver.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   1128	      8	   1624	   2760	    ac8	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+ 
+Finished building: Lesson4_EXTI.list
+ 
+11:06:12 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+../Src/main.c: In function 'main':
+../Src/main.c:50:19: warning: variable 'EXTI_CFG' set but not used [-Wunused-but-set-variable]
+  EXTI_PinConfig_t EXTI_CFG ;
+                   ^~~~~~~~
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   2312	      8	   1632	   3952	    f70	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+Finished building: Lesson4_EXTI.bin
+ 
+ 
+Finished building: Lesson4_EXTI.list
+ 
+11:17:23 **** Incremental Build of configuration Debug for project Lesson4_EXTI ****
+make -j12 all 
+arm-none-eabi-gcc -gdwarf-2 "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C6Tx -DDEBUG -c -I../Inc -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/HAL/includes" -I"D:/Omar/Embedded System/K_S/Unit7_Workspace/Lesson4_EXTI/MCAL/inc" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc -gdwarf-2 -o "Lesson4_EXTI.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Omar\Embedded System\K_S\Unit7_Workspace\Lesson4_EXTI\STM32F103C6TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Lesson4_EXTI.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Lesson4_EXTI.elf
+ 
+arm-none-eabi-objdump -h -S  Lesson4_EXTI.elf  > "Lesson4_EXTI.list"
+arm-none-eabi-objcopy  -O binary  Lesson4_EXTI.elf  "Lesson4_EXTI.bin"
+arm-none-eabi-size   Lesson4_EXTI.elf 
+   text	   data	    bss	    dec	    hex	filename
+   3596	      8	   1632	   5236	   1474	Lesson4_EXTI.elf
+Finished building: default.size.stdout
+ 
+Finished building: Lesson4_EXTI.bin
+ 
+Finished building: Lesson4_EXTI.list
+ 
